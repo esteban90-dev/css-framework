@@ -1,0 +1,1049 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * Basic typography style for copy text
+ */
+/* default typeface */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+/* sans-serif typeface */
+.sans-serif {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+@media screen and (min-width: 576px) {
+  .sans-serif_sm {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sans-serif_md {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  }
+}
+@media screen and (min-width: 992px) {
+  .sans-serif_lg {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  }
+}
+
+/* serif typeface */
+.serif {
+  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+@media screen and (min-width: 576px) {
+  .serif_sm {
+    font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  }
+}
+@media screen and (min-width: 768px) {
+  .serif_md {
+    font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  }
+}
+@media screen and (min-width: 992px) {
+  .serif_lg {
+    font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  }
+}
+
+/* sans-serif typeface */
+.mono {
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+}
+@media screen and (min-width: 576px) {
+  .mono_sm {
+    font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mono_md {
+    font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  }
+}
+@media screen and (min-width: 992px) {
+  .mono_lg {
+    font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  }
+}
+
+/* type scale - headers */
+h6 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.h6 {
+  font-size: 1rem;
+}
+@media screen and (min-width: 576px) {
+  .h6_sm {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .h6_md {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .h6_lg {
+    font-size: 1rem;
+  }
+}
+
+.h5 {
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 576px) {
+  .h5_sm {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .h5_md {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .h5_lg {
+    font-size: 1.25rem;
+  }
+}
+
+.h4 {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 576px) {
+  .h4_sm {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .h4_md {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .h4_lg {
+    font-size: 1.5rem;
+  }
+}
+
+.h3 {
+  font-size: 2.25rem;
+}
+@media screen and (min-width: 576px) {
+  .h3_sm {
+    font-size: 2.25rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .h3_md {
+    font-size: 2.25rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .h3_lg {
+    font-size: 2.25rem;
+  }
+}
+
+.h2 {
+  font-size: 3rem;
+}
+@media screen and (min-width: 576px) {
+  .h2_sm {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .h2_md {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .h2_lg {
+    font-size: 3rem;
+  }
+}
+
+.h1 {
+  font-size: 5rem;
+}
+@media screen and (min-width: 576px) {
+  .h1_sm {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .h1_md {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .h1_lg {
+    font-size: 5rem;
+  }
+}
+
+/* line height */
+.lh-1 {
+  line-height: 1;
+}
+@media screen and (min-width: 576px) {
+  .lh-1_sm {
+    line-height: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lh-1_md {
+    line-height: 1;
+  }
+}
+@media screen and (min-width: 992px) {
+  .lh-1_lg {
+    line-height: 1;
+  }
+}
+
+.lh-md {
+  line-height: 1.25;
+}
+@media screen and (min-width: 576px) {
+  .lh-md_sm {
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lh-md_md {
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 992px) {
+  .lh-md_lg {
+    line-height: 1.25;
+  }
+}
+
+.lh-lg {
+  line-height: 1.5;
+}
+@media screen and (min-width: 576px) {
+  .lh-lg_sm {
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lh-lg_md {
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 992px) {
+  .lh-lg_lg {
+    line-height: 1.5;
+  }
+}
+
+/* font-weight */
+.fw-100 {
+  font-weight: 100;
+}
+@media screen and (min-width: 576px) {
+  .fw-100_sm {
+    font-weight: 100;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fw-100_md {
+    font-weight: 100;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fw-100_lg {
+    font-weight: 100;
+  }
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+@media screen and (min-width: 576px) {
+  .fw-200_sm {
+    font-weight: 200;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fw-200_md {
+    font-weight: 200;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fw-200_lg {
+    font-weight: 200;
+  }
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+@media screen and (min-width: 576px) {
+  .fw-300_sm {
+    font-weight: 300;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fw-300_md {
+    font-weight: 300;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fw-300_lg {
+    font-weight: 300;
+  }
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+@media screen and (min-width: 576px) {
+  .fw-400_sm {
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fw-400_md {
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fw-400_lg {
+    font-weight: 400;
+  }
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+@media screen and (min-width: 576px) {
+  .fw-500_sm {
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fw-500_md {
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fw-500_lg {
+    font-weight: 500;
+  }
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+@media screen and (min-width: 576px) {
+  .fw-600_sm {
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fw-600_md {
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fw-600_lg {
+    font-weight: 600;
+  }
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+@media screen and (min-width: 576px) {
+  .fw-700_sm {
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fw-700_md {
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fw-700_lg {
+    font-weight: 700;
+  }
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+@media screen and (min-width: 576px) {
+  .fw-800_sm {
+    font-weight: 800;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fw-800_md {
+    font-weight: 800;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fw-800_lg {
+    font-weight: 800;
+  }
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+@media screen and (min-width: 576px) {
+  .fw-900_sm {
+    font-weight: 900;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fw-900_md {
+    font-weight: 900;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fw-900_lg {
+    font-weight: 900;
+  }
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+@media screen and (min-width: 576px) {
+  .fw-normal_sm {
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fw-normal_md {
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fw-normal_lg {
+    font-weight: 400;
+  }
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+@media screen and (min-width: 576px) {
+  .fw-bold_sm {
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fw-bold_md {
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fw-bold_lg {
+    font-weight: 700;
+  }
+}
+
+/* font-styles */
+.fs-normal {
+  font-style: normal;
+}
+@media screen and (min-width: 576px) {
+  .fs-normal_sm {
+    font-style: normal;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fs-normal_md {
+    font-style: normal;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fs-normal_lg {
+    font-style: normal;
+  }
+}
+
+.fs-italic {
+  font-style: italic;
+}
+@media screen and (min-width: 576px) {
+  .fs-italic_sm {
+    font-style: italic;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fs-italic_md {
+    font-style: italic;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fs-italic_lg {
+    font-style: italic;
+  }
+}
+
+/* text-alignments */
+.text-align-left {
+  text-align: left;
+}
+@media screen and (min-width: 576px) {
+  .text-align-left_sm {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-align-left_md {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-align-left_lg {
+    text-align: left;
+  }
+}
+
+.text-align-center {
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .text-align-center_sm {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-align-center_md {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-align-center_lg {
+    text-align: center;
+  }
+}
+
+.text-align-right {
+  text-align: right;
+}
+@media screen and (min-width: 576px) {
+  .text-align-right_sm {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-align-right_md {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-align-right_lg {
+    text-align: right;
+  }
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+@media screen and (min-width: 576px) {
+  .text-align-justify_sm {
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-align-justify_md {
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-align-justify_lg {
+    text-align: justify;
+  }
+}
+
+/* text-colors */
+.text-blue {
+  color: #0d6efd;
+}
+@media screen and (min-width: 576px) {
+  .text-blue_sm {
+    color: #0d6efd;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-blue_md {
+    color: #0d6efd;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-blue_lg {
+    color: #0d6efd;
+  }
+}
+
+.text-indigo {
+  color: #6610f2;
+}
+@media screen and (min-width: 576px) {
+  .text-indigo_sm {
+    color: #6610f2;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-indigo_md {
+    color: #6610f2;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-indigo_lg {
+    color: #6610f2;
+  }
+}
+
+.text-purple {
+  color: #6f42c1;
+}
+@media screen and (min-width: 576px) {
+  .text-purple_sm {
+    color: #6f42c1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-purple_md {
+    color: #6f42c1;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-purple_lg {
+    color: #6f42c1;
+  }
+}
+
+.text-pink {
+  color: #d63384;
+}
+@media screen and (min-width: 576px) {
+  .text-pink_sm {
+    color: #d63384;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-pink_md {
+    color: #d63384;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-pink_lg {
+    color: #d63384;
+  }
+}
+
+.text-red {
+  color: #dc3545;
+}
+@media screen and (min-width: 576px) {
+  .text-red_sm {
+    color: #dc3545;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-red_md {
+    color: #dc3545;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-red_lg {
+    color: #dc3545;
+  }
+}
+
+.text-orange {
+  color: #fd7e14;
+}
+@media screen and (min-width: 576px) {
+  .text-orange_sm {
+    color: #fd7e14;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-orange_md {
+    color: #fd7e14;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-orange_lg {
+    color: #fd7e14;
+  }
+}
+
+.text-yellow {
+  color: #ffc107;
+}
+@media screen and (min-width: 576px) {
+  .text-yellow_sm {
+    color: #ffc107;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-yellow_md {
+    color: #ffc107;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-yellow_lg {
+    color: #ffc107;
+  }
+}
+
+.text-green {
+  color: #198754;
+}
+@media screen and (min-width: 576px) {
+  .text-green_sm {
+    color: #198754;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-green_md {
+    color: #198754;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-green_lg {
+    color: #198754;
+  }
+}
+
+.text-teal {
+  color: #20c997;
+}
+@media screen and (min-width: 576px) {
+  .text-teal_sm {
+    color: #20c997;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-teal_md {
+    color: #20c997;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-teal_lg {
+    color: #20c997;
+  }
+}
+
+.text-cyan {
+  color: #0dcaf0;
+}
+@media screen and (min-width: 576px) {
+  .text-cyan_sm {
+    color: #0dcaf0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-cyan_md {
+    color: #0dcaf0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-cyan_lg {
+    color: #0dcaf0;
+  }
+}
+
+.text-white {
+  color: #fff;
+}
+@media screen and (min-width: 576px) {
+  .text-white_sm {
+    color: #fff;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-white_md {
+    color: #fff;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-white_lg {
+    color: #fff;
+  }
+}
+
+.text-gray-100 {
+  color: #f8f9fa;
+}
+@media screen and (min-width: 576px) {
+  .text-gray-100_sm {
+    color: #f8f9fa;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-gray-100_md {
+    color: #f8f9fa;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-gray-100_lg {
+    color: #f8f9fa;
+  }
+}
+
+.text-gray-200 {
+  color: #e9ecef;
+}
+@media screen and (min-width: 576px) {
+  .text-gray-200_sm {
+    color: #e9ecef;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-gray-200_md {
+    color: #e9ecef;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-gray-200_lg {
+    color: #e9ecef;
+  }
+}
+
+.text-gray-300 {
+  color: #dee2e6;
+}
+@media screen and (min-width: 576px) {
+  .text-gray-300_sm {
+    color: #dee2e6;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-gray-300_md {
+    color: #dee2e6;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-gray-300_lg {
+    color: #dee2e6;
+  }
+}
+
+.text-gray-400 {
+  color: #ced4da;
+}
+@media screen and (min-width: 576px) {
+  .text-gray-400_sm {
+    color: #ced4da;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-gray-400_md {
+    color: #ced4da;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-gray-400_lg {
+    color: #ced4da;
+  }
+}
+
+.text-gray-500 {
+  color: #adb5bd;
+}
+@media screen and (min-width: 576px) {
+  .text-gray-500_sm {
+    color: #adb5bd;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-gray-500_md {
+    color: #adb5bd;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-gray-500_lg {
+    color: #adb5bd;
+  }
+}
+
+.text-gray-600 {
+  color: #6c757d;
+}
+@media screen and (min-width: 576px) {
+  .text-gray-600_sm {
+    color: #6c757d;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-gray-600_md {
+    color: #6c757d;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-gray-600_lg {
+    color: #6c757d;
+  }
+}
+
+.text-gray-700 {
+  color: #495057;
+}
+@media screen and (min-width: 576px) {
+  .text-gray-700_sm {
+    color: #495057;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-gray-700_md {
+    color: #495057;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-gray-700_lg {
+    color: #495057;
+  }
+}
+
+.text-gray-800 {
+  color: #343a40;
+}
+@media screen and (min-width: 576px) {
+  .text-gray-800_sm {
+    color: #343a40;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-gray-800_md {
+    color: #343a40;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-gray-800_lg {
+    color: #343a40;
+  }
+}
+
+.text-gray-900 {
+  color: #212529;
+}
+@media screen and (min-width: 576px) {
+  .text-gray-900_sm {
+    color: #212529;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-gray-900_md {
+    color: #212529;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-gray-900_lg {
+    color: #212529;
+  }
+}
+
+.text-black {
+  color: #000;
+}
+@media screen and (min-width: 576px) {
+  .text-black_sm {
+    color: #000;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-black_md {
+    color: #000;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-black_lg {
+    color: #000;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
