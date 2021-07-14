@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the grid of the site/application.
+// -----------------------------------------------------------------------------
+
+@use 'sass:math';
+
+.container {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1 * math.div($column-gutter-width, 2);
+  margin-right: -1 * math.div($column-gutter-width, 2);
+}
+
+@for $i from 0 to $column-number {
+  .col-#{$i + 1} { 
+    @include generate_media_queries {
+      width:  math.div(100, math.div( $column-number, $i + 1 ) );
+    }
+  }
+}
