@@ -36,10 +36,6 @@ body {
   line-height: 1;
 }
 
-ol, ul {
-  list-style: none;
-}
-
 blockquote, q {
   quotes: none;
 }
@@ -97,6 +93,23 @@ h1 {
 
 .link-underline, .link-underline-hover:hover {
   text-decoration: underline;
+}
+
+/**
+ * Lists utility classes
+ */
+.list {
+  list-style-type: none;
+}
+
+.list-numbered {
+  list-style-type: roman;
+  list-style-position: inside;
+}
+
+.list-bulleted {
+  list-style-type: disc;
+  list-style-position: inside;
 }
 
 /**

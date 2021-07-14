@@ -1,0 +1,17 @@
+/**
+ * Lists utility classes
+ */
+
+ .list {
+   list-style-type: none;
+ }
+
+ .list-numbered {
+   list-style-type: roman;
+   list-style-position: inside;
+ }
+
+ .list-bulleted {
+   list-style-type: disc;
+   list-style-position: inside;
+ }
