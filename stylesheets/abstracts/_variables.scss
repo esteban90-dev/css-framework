@@ -2,6 +2,8 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
+@use 'sass:map';
+
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif; 
 $font-family-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; 
 $font-family-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; 
@@ -15,12 +17,15 @@ $font-sizes: (
   "1": 5rem
 );
 
+$default-font-size: map.get($font-sizes, "6");
 
 $line-heights: (
   "1": 1,
   "md": 1.25,
   "lg": 1.5
 );
+
+$default-line-height: map.get($line-heights, "md");
 
 $font-weights: (
   "100": 100,

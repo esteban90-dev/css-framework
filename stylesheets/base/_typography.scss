@@ -5,6 +5,8 @@
 /* default typeface */
 body {
   font-family: $font-family-sans-serif;
+  font-size: $default-font-size;
+  line-height: $default-line-height;
 }
 
 /*default headers */
