@@ -7,81 +7,8 @@ body {
   font-family: $font-family-sans-serif;
 }
 
-/* sans-serif typeface */
-.sans-serif {
-  @include generate_media_queries { 
-    font-family: $font-family-sans-serif 
-  }
-}
-
-/* serif typeface */
-.serif {
-  @include generate_media_queries { 
-    font-family: $font-family-serif 
-  }
-}
-
-/* sans-serif typeface */
-.mono {
-  @include generate_media_queries {
-    font-family: $font-family-mono
-  }
-}
-
-/* type scale - headers */
+/*default headers */
 @each $font-num, $font-size in $font-sizes {
   h#{$font-num} { font-size: $font-size; }
 }
 
-@each $font-num, $font-size in $font-sizes {
-  .h#{$font-num} { 
-    @include generate_media_queries {
-      font-size: $font-size; 
-    }
-  }
-}
-
-/* line height */
-@each $line-height-num, $line-height in $line-heights {
-  .lh-#{$line-height-num} { 
-    @include generate_media_queries {
-      line-height: $line-height; 
-    }
-  }
-}
-
-/* font-weight */
-@each $font-num, $font-weight in $font-weights {
-  .fw-#{$font-num} { 
-    @include generate_media_queries {
-      font-weight: $font-weight; 
-    }
-  }
-}
-
-/* font-styles */
-@each $font-style-num, $font-style in $font-styles {
-  .fs-#{$font-style-num} { 
-    @include generate_media_queries {
-      font-style: $font-style; 
-    }
-  }
-}
-
-/* text-alignments */
-@each $text-alignment-num, $text-alignment in $text-alignments {
-  .text-align-#{$text-alignment-num} { 
-    @include generate_media_queries {
-      text-align: $text-alignment; 
-    }
-  }
-}
-
-/* text-colors */
-@each $color, $color-value in $colors {
-  .text-#{$color} { 
-    @include generate_media_queries {
-      color: $color-value 
-    }
-  }
-}
