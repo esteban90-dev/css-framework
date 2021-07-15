@@ -455,6 +455,407 @@ h1 {
   list-style-position: inside;
 }
 
+/* background colors */
+.bg-blue {
+  background-color: #0d6efd;
+}
+
+.bg-indigo {
+  background-color: #6610f2;
+}
+
+.bg-purple {
+  background-color: #6f42c1;
+}
+
+.bg-pink {
+  background-color: #d63384;
+}
+
+.bg-red {
+  background-color: #dc3545;
+}
+
+.bg-orange {
+  background-color: #fd7e14;
+}
+
+.bg-yellow {
+  background-color: #ffc107;
+}
+
+.bg-green {
+  background-color: #198754;
+}
+
+.bg-teal {
+  background-color: #20c997;
+}
+
+.bg-cyan {
+  background-color: #0dcaf0;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-gray-100 {
+  background-color: #f8f9fa;
+}
+
+.bg-gray-200 {
+  background-color: #e9ecef;
+}
+
+.bg-gray-300 {
+  background-color: #dee2e6;
+}
+
+.bg-gray-400 {
+  background-color: #ced4da;
+}
+
+.bg-gray-500 {
+  background-color: #adb5bd;
+}
+
+.bg-gray-600 {
+  background-color: #6c757d;
+}
+
+.bg-gray-700 {
+  background-color: #495057;
+}
+
+.bg-gray-800 {
+  background-color: #343a40;
+}
+
+.bg-gray-900 {
+  background-color: #212529;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+/* background colors - responsive values */
+@media screen and (min-width: 576px) {
+  .bg-blue_sm {
+    background-color: #0d6efd;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-indigo_sm {
+    background-color: #6610f2;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-purple_sm {
+    background-color: #6f42c1;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-pink_sm {
+    background-color: #d63384;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-red_sm {
+    background-color: #dc3545;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-orange_sm {
+    background-color: #fd7e14;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-yellow_sm {
+    background-color: #ffc107;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-green_sm {
+    background-color: #198754;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-teal_sm {
+    background-color: #20c997;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-cyan_sm {
+    background-color: #0dcaf0;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-white_sm {
+    background-color: #fff;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-gray-100_sm {
+    background-color: #f8f9fa;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-gray-200_sm {
+    background-color: #e9ecef;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-gray-300_sm {
+    background-color: #dee2e6;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-gray-400_sm {
+    background-color: #ced4da;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-gray-500_sm {
+    background-color: #adb5bd;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-gray-600_sm {
+    background-color: #6c757d;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-gray-700_sm {
+    background-color: #495057;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-gray-800_sm {
+    background-color: #343a40;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-gray-900_sm {
+    background-color: #212529;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bg-black_sm {
+    background-color: #000;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-blue_md {
+    background-color: #0d6efd;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-indigo_md {
+    background-color: #6610f2;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-purple_md {
+    background-color: #6f42c1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-pink_md {
+    background-color: #d63384;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-red_md {
+    background-color: #dc3545;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-orange_md {
+    background-color: #fd7e14;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-yellow_md {
+    background-color: #ffc107;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-green_md {
+    background-color: #198754;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-teal_md {
+    background-color: #20c997;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-cyan_md {
+    background-color: #0dcaf0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-white_md {
+    background-color: #fff;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-gray-100_md {
+    background-color: #f8f9fa;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-gray-200_md {
+    background-color: #e9ecef;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-gray-300_md {
+    background-color: #dee2e6;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-gray-400_md {
+    background-color: #ced4da;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-gray-500_md {
+    background-color: #adb5bd;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-gray-600_md {
+    background-color: #6c757d;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-gray-700_md {
+    background-color: #495057;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-gray-800_md {
+    background-color: #343a40;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-gray-900_md {
+    background-color: #212529;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-black_md {
+    background-color: #000;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-blue_lg {
+    background-color: #0d6efd;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-indigo_lg {
+    background-color: #6610f2;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-purple_lg {
+    background-color: #6f42c1;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-pink_lg {
+    background-color: #d63384;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-red_lg {
+    background-color: #dc3545;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-orange_lg {
+    background-color: #fd7e14;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-yellow_lg {
+    background-color: #ffc107;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-green_lg {
+    background-color: #198754;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-teal_lg {
+    background-color: #20c997;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-cyan_lg {
+    background-color: #0dcaf0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-white_lg {
+    background-color: #fff;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-gray-100_lg {
+    background-color: #f8f9fa;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-gray-200_lg {
+    background-color: #e9ecef;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-gray-300_lg {
+    background-color: #dee2e6;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-gray-400_lg {
+    background-color: #ced4da;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-gray-500_lg {
+    background-color: #adb5bd;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-gray-600_lg {
+    background-color: #6c757d;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-gray-700_lg {
+    background-color: #495057;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-gray-800_lg {
+    background-color: #343a40;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-gray-900_lg {
+    background-color: #212529;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-black_lg {
+    background-color: #000;
+  }
+}
 /**
  * Typography utility classes
  */

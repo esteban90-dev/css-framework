@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the background component.
+// -----------------------------------------------------------------------------
+
+/* background colors */ 
+@each $color, $color-value in $colors {
+  .bg-#{$color} {
+    background-color: $color-value;
+  }
+}
+
+/* background colors - responsive values */
+@each $breakpoint, $breakpoint-value in $breakpoints {
+  @each $color, $color-value in $colors {
+    @media screen and (min-width: $breakpoint-value) {
+      .bg-#{$color}_#{$breakpoint} {
+        background-color: $color-value;
+      }
+    }
+  }
+}
+  
