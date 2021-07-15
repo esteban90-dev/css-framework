@@ -5,3 +5,5 @@
 /* background colors */ 
 @include generate_class_selectors_from_map($background-colors);
   
+/* background gradient */
+@include generate_class_selectors_from_map($background-gradients);

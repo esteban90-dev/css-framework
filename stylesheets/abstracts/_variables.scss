@@ -116,6 +116,17 @@ $background-colors: (
   "values": $colors
 );
 
+$background-gradients: (
+  "selector-prefix": ".bg-gradient-",
+  "property-name": "background-image",
+  "responsive": true,
+  "values": (
+    "1": linear-gradient(180deg, rgba(255, 255, 255, 0.329), rgba(255, 255, 255, 0)),
+    "2": linear-gradient(180deg, rgba(255, 255, 255, 0.493), rgba(255, 255, 255, 0)),
+    "3": linear-gradient(180deg, rgba(255, 255, 255, 0.747), rgba(255, 255, 255, 0))
+  )
+);
+
 $breakpoints: (
   "sm": 576px,
   "md": 768px,

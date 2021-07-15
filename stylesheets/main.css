@@ -761,6 +761,58 @@ h1 {
     background-color: #000;
   }
 }
+/* background gradient */
+.bg-gradient-1 {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.329), rgba(255, 255, 255, 0));
+}
+
+.bg-gradient-2 {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.493), rgba(255, 255, 255, 0));
+}
+
+.bg-gradient-3 {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.747), rgba(255, 255, 255, 0));
+}
+
+@media screen and (min-width: 576px) {
+  .bg-gradient-1_sm {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.329), rgba(255, 255, 255, 0));
+  }
+
+  .bg-gradient-2_sm {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.493), rgba(255, 255, 255, 0));
+  }
+
+  .bg-gradient-3_sm {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.747), rgba(255, 255, 255, 0));
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-gradient-1_md {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.329), rgba(255, 255, 255, 0));
+  }
+
+  .bg-gradient-2_md {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.493), rgba(255, 255, 255, 0));
+  }
+
+  .bg-gradient-3_md {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.747), rgba(255, 255, 255, 0));
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-gradient-1_lg {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.329), rgba(255, 255, 255, 0));
+  }
+
+  .bg-gradient-2_lg {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.493), rgba(255, 255, 255, 0));
+  }
+
+  .bg-gradient-3_lg {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.747), rgba(255, 255, 255, 0));
+  }
+}
 /**
  * Typography utility classes
  */
