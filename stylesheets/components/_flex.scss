@@ -1,0 +1,9 @@
+/**
+ * Flex utility classes
+ */
+
+ /* flex parents */ 
+ @include generate_class_selectors_from_map($flex-directions);
+ @include generate_class_selectors_from_map($flex-wraps);
+ @include generate_class_selectors_from_map($flex-justifications);
+ @include generate_class_selectors_from_map($flex-alignments);

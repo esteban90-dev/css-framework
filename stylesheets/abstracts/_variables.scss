@@ -177,6 +177,54 @@ $display-values: (
   )
 );
 
+$flex-directions: (
+  "selector-prefix": ".flex-",
+  "property-name": "flex-direction",
+  "responsive": true,
+  "values": (
+    "row": "row",
+    "col": "column",
+    "row-reverse": "row-reverse",
+    "col-reverse": "column-reverse"
+  )
+);
+
+$flex-wraps: (
+  "selector-prefix": ".flex-",
+  "property-name": "flex-wrap",
+  "responsive": true,
+  "values": (
+    "wrap": "wrap",
+    "no-wrap": "no-wrap"
+  )
+);
+
+$flex-justifications: (
+  "selector-prefix": ".justify-",
+  "property-name": "justify-content",
+  "responsive": true,
+  "values": (
+    "start": "flex-start",
+    "center": "center",
+    "end": "flex-end",
+    "between": "space-between",
+    "around": "space-around",
+    "evenly": "space-evenly"
+  )
+);
+
+$flex-alignments: (
+  "selector-prefix": ".align-",
+  "property-name": "align-items",
+  "responsive": true,
+  "values": (
+    "start": "flex-start",
+    "center": "center",
+    "end": "flex-end",
+    "stretch": "stretch"
+  )
+);
+
 $breakpoints: (
   "sm": 576px,
   "md": 768px,
