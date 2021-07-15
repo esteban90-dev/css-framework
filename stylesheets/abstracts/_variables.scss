@@ -165,6 +165,18 @@ $border-radii: (
   )
 );
 
+$display-values: (
+  "selector-prefix": ".display-",
+  "property-name": "display",
+  "responsive": true,
+  "values": (
+    "none": "none",
+    "block": "block",
+    "inline-block": "inline-block",
+    "flex": "flex"
+  )
+);
+
 $breakpoints: (
   "sm": 576px,
   "md": 768px,

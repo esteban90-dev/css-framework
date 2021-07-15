@@ -1,0 +1,6 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the display component.
+// -----------------------------------------------------------------------------
+
+/* display values */
+@include generate_class_selectors_from_map($display-values);
