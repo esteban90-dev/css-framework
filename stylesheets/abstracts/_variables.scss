@@ -127,6 +127,44 @@ $background-gradients: (
   )
 );
 
+$border-widths: (
+  "selector-prefix": ".bw-",
+  "property-name": "border-width",
+  "responsive": false,
+  "values": (
+    "0": .0625rem,
+    "1": .125rem,
+    "2": .25rem,
+    "3": .5rem,
+    "4": 1rem,
+    "5": 2rem
+  )
+);
+
+$border-width-default: map.get( map.get( $border-widths, "values"), "0" );
+
+$border-colors: (
+  "selector-prefix": ".bc-",
+  "property-name": "border-color",
+  "responsive": false,
+  "values": $colors
+);
+
+$border-color-default: map.get( map.get( $border-colors, "values"), "black" );
+
+$border-radii: (
+  "selector-prefix": ".br-",
+  "property-name": "border-radius",
+  "responsive": false,
+  "values": (
+    "1": .25rem,
+    "2": .5rem,
+    "3": .75rem,
+    "4": 1rem,
+    "5": 2rem
+  )
+);
+
 $breakpoints: (
   "sm": 576px,
   "md": 768px,
