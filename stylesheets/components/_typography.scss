@@ -19,49 +19,20 @@
 }
 
 /* type scale - headers */
-@each $font-num, $font-size in $font-sizes {
-  .h#{$font-num} { 
-    @include generate_media_queries {
-      font-size: $font-size; 
-    }
-  }
-}
+@include generate_class_selectors_from_map($font-sizes);
 
 /* line height */
-@each $line-height-num, $line-height in $line-heights {
-  .lh-#{$line-height-num} { 
-    @include generate_media_queries {
-      line-height: $line-height; 
-    }
-  }
-}
+@include generate_class_selectors_from_map($line-heights);
 
 /* font-weight */
-@each $font-num, $font-weight in $font-weights {
-  .fw-#{$font-num} { 
-    font-weight: $font-weight; 
-  }
-}
+@include generate_class_selectors_from_map($font-weights);
 
 /* font-styles */
-@each $font-style-num, $font-style in $font-styles {
-  .fs-#{$font-style-num} { 
-    font-style: $font-style; 
-  }
-}
+@include generate_class_selectors_from_map($font-styles);
 
 /* text-alignments */
-@each $text-alignment-num, $text-alignment in $text-alignments {
-  .text-align-#{$text-alignment-num} { 
-    @include generate_media_queries {
-      text-align: $text-alignment; 
-    }
-  }
-}
+@include generate_class_selectors_from_map($text-alignments);
 
 /* text-colors */
-@each $color, $color-value in $colors {
-  .text-#{$color} { 
-    color: $color-value 
-  }
-}
+@include generate_class_selectors_from_map($text-colors);
+

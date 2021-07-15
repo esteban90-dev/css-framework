@@ -2,6 +2,8 @@
  * Basic typography style for copy text
  */
 
+ @use 'sass:map';
+
 /* default typeface */
 body {
   font-family: $font-family-sans-serif;
@@ -10,7 +12,7 @@ body {
 }
 
 /*default headers */
-@each $font-num, $font-size in $font-sizes {
-  h#{$font-num} { font-size: $font-size; }
+@each $key, $value in map.get($font-sizes, "values") {
+  h#{$key} { font-size: $value }
 }
 

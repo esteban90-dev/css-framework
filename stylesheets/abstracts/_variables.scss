@@ -9,48 +9,73 @@ $font-family-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roma
 $font-family-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; 
 
 $font-sizes: (
-  "6": 1rem,
-  "5": 1.25rem,
-  "4": 1.5rem,
-  "3": 2.25rem,
-  "2": 3rem,
-  "1": 5rem
+  "selector-prefix": ".h",
+  "responsive": false,
+  "property-name": "font-size",
+  "values": (
+    "6": 1rem,
+    "5": 1.25rem,
+    "4": 1.5rem,
+    "3": 2.25rem,
+    "2": 3rem,
+    "1": 5rem
+  )
 );
 
 $default-font-size: map.get($font-sizes, "6");
 
 $line-heights: (
-  "1": 1,
-  "md": 1.25,
-  "lg": 1.5
+  "selector-prefix": ".lh-",
+  "property-name": "line-height",
+  "responsive": false,
+  "values": (
+    "1": 1,
+    "md": 1.25,
+    "lg": 1.5
+  )
 );
 
 $default-line-height: map.get($line-heights, "md");
 
 $font-weights: (
-  "100": 100,
-  "200": 200,
-  "300": 300,
-  "400": 400,
-  "500": 500,
-  "600": 600,
-  "700": 700,
-  "800": 800,
-  "900": 900,
-  "normal": 400,
-  "bold": 700
+  "selector-prefix": ".fw-",
+  "property-name": "font-weight",
+  "responsive": false,
+  "values": (
+    "100": 100,
+    "200": 200,
+    "300": 300,
+    "400": 400,
+    "500": 500,
+    "600": 600,
+    "700": 700,
+    "800": 800,
+    "900": 900,
+    "normal": 400,
+    "bold": 700
+  )
 );
 
 $font-styles: (
-  "normal": normal,
-  "italic": italic
+  "selector-prefix": ".fs-",
+  "property-name": "font-style",
+  "responsive": false,
+  "values": (
+    "normal": normal,
+    "italic": italic
+  )
 );
 
 $text-alignments: (
-  "left": left,
-  "center": center,
-  "right": right,
-  "justify": justify
+  "selector-prefix": ".text-align-",
+  "property-name": "text-align",
+  "responsive": true,
+  "values": (
+    "left": left,
+    "center": center,
+    "right": right,
+    "justify": justify
+  )
 );
 
 $colors: (
@@ -75,6 +100,13 @@ $colors: (
   "gray-800": #343a40,
   "gray-900": #212529,
   "black":    #000,
+);
+
+$text-colors: (
+  "selector-prefix": ".text-",
+  "property-name": "color",
+  "responsive": true,
+  "values": $colors
 );
 
 $breakpoints: (
