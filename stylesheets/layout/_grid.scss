@@ -4,6 +4,8 @@
 
 @use 'sass:math';
 
+/* Layout Grid */
+
 .container {
   width: 100%;
 }
@@ -17,12 +19,4 @@
   padding-bottom: math.div( $vertical-gutter-width, 2 );
 }
 
-@for $i from 0 to $column-number {
-  .col-#{$i + 1} { 
-    @include generate_media_queries {
-      width:  percentage( math.div( $i + 1, $column-number ) );
-      padding-left: math.div( $horizontal-gutter-width, 2 );
-      padding-right: math.div( $horizontal-gutter-width, 2 );
-    }
-  }
-}
+@include generate_grid_columns;
