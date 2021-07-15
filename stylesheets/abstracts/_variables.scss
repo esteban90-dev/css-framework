@@ -109,6 +109,13 @@ $text-colors: (
   "values": $colors
 );
 
+$background-colors: (
+  "selector-prefix": ".bg-",
+  "property-name": "background-color",
+  "responsive": true,
+  "values": $colors
+);
+
 $breakpoints: (
   "sm": 576px,
   "md": 768px,
