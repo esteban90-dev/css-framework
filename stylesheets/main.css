@@ -949,6 +949,173 @@ h1 {
     align-items: stretch;
   }
 }
+/* flex children */
+.align-self-start {
+  align-self: flex-start;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.align-self-stretch {
+  align-self: stretch;
+}
+
+@media screen and (min-width: 576px) {
+  .align-self-start_sm {
+    align-self: flex-start;
+  }
+
+  .align-self-center_sm {
+    align-self: center;
+  }
+
+  .align-self-end_sm {
+    align-self: flex-end;
+  }
+
+  .align-self-stretch_sm {
+    align-self: stretch;
+  }
+}
+@media screen and (min-width: 768px) {
+  .align-self-start_md {
+    align-self: flex-start;
+  }
+
+  .align-self-center_md {
+    align-self: center;
+  }
+
+  .align-self-end_md {
+    align-self: flex-end;
+  }
+
+  .align-self-stretch_md {
+    align-self: stretch;
+  }
+}
+@media screen and (min-width: 992px) {
+  .align-self-start_lg {
+    align-self: flex-start;
+  }
+
+  .align-self-center_lg {
+    align-self: center;
+  }
+
+  .align-self-end_lg {
+    align-self: flex-end;
+  }
+
+  .align-self-stretch_lg {
+    align-self: stretch;
+  }
+}
+.order-0 {
+  order: 0;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+.order-4 {
+  order: 4;
+}
+
+.order-5 {
+  order: 5;
+}
+
+@media screen and (min-width: 576px) {
+  .order-0_sm {
+    order: 0;
+  }
+
+  .order-1_sm {
+    order: 1;
+  }
+
+  .order-2_sm {
+    order: 2;
+  }
+
+  .order-3_sm {
+    order: 3;
+  }
+
+  .order-4_sm {
+    order: 4;
+  }
+
+  .order-5_sm {
+    order: 5;
+  }
+}
+@media screen and (min-width: 768px) {
+  .order-0_md {
+    order: 0;
+  }
+
+  .order-1_md {
+    order: 1;
+  }
+
+  .order-2_md {
+    order: 2;
+  }
+
+  .order-3_md {
+    order: 3;
+  }
+
+  .order-4_md {
+    order: 4;
+  }
+
+  .order-5_md {
+    order: 5;
+  }
+}
+@media screen and (min-width: 992px) {
+  .order-0_lg {
+    order: 0;
+  }
+
+  .order-1_lg {
+    order: 1;
+  }
+
+  .order-2_lg {
+    order: 2;
+  }
+
+  .order-3_lg {
+    order: 3;
+  }
+
+  .order-4_lg {
+    order: 4;
+  }
+
+  .order-5_lg {
+    order: 5;
+  }
+}
 /**
  * Background utility classes
  */

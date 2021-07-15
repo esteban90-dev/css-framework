@@ -225,6 +225,32 @@ $flex-alignments: (
   )
 );
 
+$flex-align-selfs: (
+  "selector-prefix": ".align-self-",
+  "property-name": "align-self",
+  "responsive": true,
+  "values": (
+    "start": "flex-start",
+    "center": "center",
+    "end": "flex-end",
+    "stretch": "stretch"
+  )
+);
+
+$flex-orders: (
+  "selector-prefix": ".order-",
+  "property-name": "order",
+  "responsive": true,
+  "values": (
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5
+  )
+);
+
 $breakpoints: (
   "sm": 576px,
   "md": 768px,

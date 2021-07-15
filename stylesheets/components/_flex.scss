@@ -7,3 +7,7 @@
  @include generate_class_selectors_from_map($flex-wraps);
  @include generate_class_selectors_from_map($flex-justifications);
  @include generate_class_selectors_from_map($flex-alignments);
+
+ /* flex children */
+ @include generate_class_selectors_from_map($flex-align-selfs);
+ @include generate_class_selectors_from_map($flex-orders);
