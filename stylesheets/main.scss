@@ -25,18 +25,18 @@
 
 // 5. Components
 @import
-  'components/button',
-  'components/links',
-  'components/lists',
+  'components/background',
   'components/borders',
+  'components/box_shadow',
+  'components/button',
   'components/display',
   'components/flex',
-  'components/background',
-  'components/typography',
+  'components/links',
+  'components/lists',
   'components/position',
-  'components/box_shadow',
   'components/sizing',
-  'components/spacing';
+  'components/spacing',
+  'components/typography';
 
 // 6. Page-specific styles
 @import
