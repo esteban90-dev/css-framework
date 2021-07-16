@@ -211,6 +211,27 @@ $sizings: (
   "100": 100%
 );
 
+$margin-spacings: (
+  "auto": auto,
+  "0": 0rem,
+  "1": .25rem,
+  "2": .5rem,
+  "3": 1rem,
+  "4": 2rem,
+  "5": 4rem,
+  "6": 8rem
+);
+
+$padding-spacings: (
+  "0": 0rem,
+  "1": .25rem,
+  "2": .5rem,
+  "3": 1rem,
+  "4": 2rem,
+  "5": 4rem,
+  "6": 8rem
+);
+
 $breakpoints: (
   "sm": 576px,
   "md": 768px,
@@ -567,6 +588,96 @@ $height-selector: (
   "property-name": "height",
   "responsive": true,
   "values": $sizings,
+  "additional-properties": null
+);
+
+$margin-selector: (
+  "selector-prefix": ".m",
+  "prefix-seperator": "-",
+  "property-name": "margin",
+  "responsive": true,
+  "values": $margin-spacings,
+  "additional-properties": null
+);
+
+$margin-top-selector: (
+  "selector-prefix": ".mt",
+  "prefix-seperator": "-",
+  "property-name": "margin-top",
+  "responsive": true,
+  "values": $margin-spacings,
+  "additional-properties": null
+);
+
+$margin-bottom-selector: (
+  "selector-prefix": ".mb",
+  "prefix-seperator": "-",
+  "property-name": "margin-bottom",
+  "responsive": true,
+  "values": $margin-spacings,
+  "additional-properties": null
+);
+
+$margin-left-selector: (
+  "selector-prefix": ".ml",
+  "prefix-seperator": "-",
+  "property-name": "margin-left",
+  "responsive": true,
+  "values": $margin-spacings,
+  "additional-properties": null
+);
+
+$margin-right-selector: (
+  "selector-prefix": ".mr",
+  "prefix-seperator": "-",
+  "property-name": "margin-right",
+  "responsive": true,
+  "values": $margin-spacings,
+  "additional-properties": null
+);
+
+$padding-selector: (
+  "selector-prefix": ".p",
+  "prefix-seperator": "-",
+  "property-name": "padding",
+  "responsive": true,
+  "values": $padding-spacings,
+  "additional-properties": null
+);
+
+$padding-top-selector: (
+  "selector-prefix": ".pt",
+  "prefix-seperator": "-",
+  "property-name": "padding-top",
+  "responsive": true,
+  "values": $padding-spacings,
+  "additional-properties": null
+);
+
+$padding-bottom-selector: (
+  "selector-prefix": ".pb",
+  "prefix-seperator": "-",
+  "property-name": "padding-bottom",
+  "responsive": true,
+  "values": $padding-spacings,
+  "additional-properties": null
+);
+
+$padding-left-selector: (
+  "selector-prefix": ".pl",
+  "prefix-seperator": "-",
+  "property-name": "padding-left",
+  "responsive": true,
+  "values": $padding-spacings,
+  "additional-properties": null
+);
+
+$padding-right-selector: (
+  "selector-prefix": ".pr",
+  "prefix-seperator": "-",
+  "property-name": "padding-right",
+  "responsive": true,
+  "values": $padding-spacings,
   "additional-properties": null
 );
 

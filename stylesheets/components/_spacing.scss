@@ -1,0 +1,34 @@
+/**
+ * Sizing utility classes
+ */
+
+/* margin */ 
+@include generate_class_selectors_from_map($margin-selector);
+
+/* margin-top */ 
+@include generate_class_selectors_from_map($margin-top-selector);
+
+/* margin-bottom */ 
+@include generate_class_selectors_from_map($margin-bottom-selector);
+
+/* margin-left */ 
+@include generate_class_selectors_from_map($margin-left-selector);
+
+/* margin-right */ 
+@include generate_class_selectors_from_map($margin-right-selector);
+
+
+/* padding */ 
+@include generate_class_selectors_from_map($padding-selector);
+
+/* padding-top */ 
+@include generate_class_selectors_from_map($padding-top-selector);
+
+/* padding-bottom */ 
+@include generate_class_selectors_from_map($padding-bottom-selector);
+
+/* padding-left */ 
+@include generate_class_selectors_from_map($padding-left-selector);
+
+/* padding-right */ 
+@include generate_class_selectors_from_map($padding-right-selector);
