@@ -3,11 +3,20 @@
 // -----------------------------------------------------------------------------
 
 @use 'sass:math';
+@use 'sass:map';
 
 /* Layout Grid */
 
 .container {
   width: 100%;
+}
+
+@media screen and (min-width: map.get($breakpoints, "sm")) {
+  .container {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 }
 
 .row {
