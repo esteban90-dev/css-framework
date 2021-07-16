@@ -1,0 +1,15 @@
+/**
+ * Sizing utility classes
+ */
+
+/* width styles */
+@include generate_class_selectors_from_map($width-selector);
+
+/* min-width styles */
+@include generate_class_selectors_from_map($min-width-selector);
+
+/* max-width styles */
+@include generate_class_selectors_from_map($max-width-selector);
+
+/* height styles */
+@include generate_class_selectors_from_map($height-selector);
