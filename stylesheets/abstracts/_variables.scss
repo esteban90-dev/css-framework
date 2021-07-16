@@ -173,6 +173,22 @@ $flex-orders: (
   "5": 5
 );
 
+$positions: (
+  "static": "static",
+  "relative": "relative",
+  "aboslute": "absolute",
+  "fixed": "fixed",
+  "sticky": "sticky"
+);
+
+$position-values: (
+  "-2": -2rem,
+  "-1": -1rem,
+  "0": 0,
+  "1": 1rem,
+  "2": 2rem
+);
+
 $breakpoints: (
   "sm": 576px,
   "md": 768px,
@@ -439,6 +455,51 @@ $flex-order-selector: (
   "property-name": "order",
   "responsive": true,
   "values": $flex-orders,
+  "additional-properties": null
+);
+
+$position-selector: (
+  "selector-prefix": ".",
+  "prefix-seperator": "",
+  "property-name": "position",
+  "responsive": true,
+  "values": $positions,
+  "additional-properties": null
+);
+
+$position-top-selector: (
+  "selector-prefix": ".top",
+  "prefix-seperator": "-",
+  "property-name": "top",
+  "responsive": true,
+  "values": $position-values,
+  "additional-properties": null
+);
+
+$position-bottom-selector: (
+  "selector-prefix": ".bottom",
+  "prefix-seperator": "-",
+  "property-name": "bottom",
+  "responsive": true,
+  "values": $position-values,
+  "additional-properties": null
+);
+
+$position-left-selector: (
+  "selector-prefix": ".left",
+  "prefix-seperator": "-",
+  "property-name": "left",
+  "responsive": true,
+  "values": $position-values,
+  "additional-properties": null
+);
+
+$position-right-selector: (
+  "selector-prefix": ".right",
+  "prefix-seperator": "-",
+  "property-name": "right",
+  "responsive": true,
+  "values": $position-values,
   "additional-properties": null
 );
 

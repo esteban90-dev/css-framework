@@ -1,0 +1,10 @@
+/**
+ * Position utility classes
+ */
+
+/* position styles */
+@include generate_class_selectors_from_map($position-selector);
+@include generate_class_selectors_from_map($position-top-selector);
+@include generate_class_selectors_from_map($position-bottom-selector);
+@include generate_class_selectors_from_map($position-right-selector);
+@include generate_class_selectors_from_map($position-left-selector);

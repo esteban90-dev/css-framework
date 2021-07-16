@@ -2035,5 +2035,424 @@ body {
     color: #000;
   }
 }
+/**
+ * Position utility classes
+ */
+/* position styles */
+.static {
+  position: static;
+}
+
+.relative {
+  position: relative;
+}
+
+.aboslute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+@media screen and (min-width: 576px) {
+  .static {
+    position: static;
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  .aboslute {
+    position: absolute;
+  }
+
+  .fixed {
+    position: fixed;
+  }
+
+  .sticky {
+    position: sticky;
+  }
+}
+@media screen and (min-width: 768px) {
+  .static {
+    position: static;
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  .aboslute {
+    position: absolute;
+  }
+
+  .fixed {
+    position: fixed;
+  }
+
+  .sticky {
+    position: sticky;
+  }
+}
+@media screen and (min-width: 992px) {
+  .static {
+    position: static;
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  .aboslute {
+    position: absolute;
+  }
+
+  .fixed {
+    position: fixed;
+  }
+
+  .sticky {
+    position: sticky;
+  }
+}
+.top--2 {
+  top: -2rem;
+}
+
+.top--1 {
+  top: -1rem;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.top-1 {
+  top: 1rem;
+}
+
+.top-2 {
+  top: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+  .top--2 {
+    top: -2rem;
+  }
+
+  .top--1 {
+    top: -1rem;
+  }
+
+  .top-0 {
+    top: 0;
+  }
+
+  .top-1 {
+    top: 1rem;
+  }
+
+  .top-2 {
+    top: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .top--2 {
+    top: -2rem;
+  }
+
+  .top--1 {
+    top: -1rem;
+  }
+
+  .top-0 {
+    top: 0;
+  }
+
+  .top-1 {
+    top: 1rem;
+  }
+
+  .top-2 {
+    top: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .top--2 {
+    top: -2rem;
+  }
+
+  .top--1 {
+    top: -1rem;
+  }
+
+  .top-0 {
+    top: 0;
+  }
+
+  .top-1 {
+    top: 1rem;
+  }
+
+  .top-2 {
+    top: 2rem;
+  }
+}
+.bottom--2 {
+  bottom: -2rem;
+}
+
+.bottom--1 {
+  bottom: -1rem;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.bottom-1 {
+  bottom: 1rem;
+}
+
+.bottom-2 {
+  bottom: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+  .bottom--2 {
+    bottom: -2rem;
+  }
+
+  .bottom--1 {
+    bottom: -1rem;
+  }
+
+  .bottom-0 {
+    bottom: 0;
+  }
+
+  .bottom-1 {
+    bottom: 1rem;
+  }
+
+  .bottom-2 {
+    bottom: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bottom--2 {
+    bottom: -2rem;
+  }
+
+  .bottom--1 {
+    bottom: -1rem;
+  }
+
+  .bottom-0 {
+    bottom: 0;
+  }
+
+  .bottom-1 {
+    bottom: 1rem;
+  }
+
+  .bottom-2 {
+    bottom: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bottom--2 {
+    bottom: -2rem;
+  }
+
+  .bottom--1 {
+    bottom: -1rem;
+  }
+
+  .bottom-0 {
+    bottom: 0;
+  }
+
+  .bottom-1 {
+    bottom: 1rem;
+  }
+
+  .bottom-2 {
+    bottom: 2rem;
+  }
+}
+.right--2 {
+  right: -2rem;
+}
+
+.right--1 {
+  right: -1rem;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.right-1 {
+  right: 1rem;
+}
+
+.right-2 {
+  right: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+  .right--2 {
+    right: -2rem;
+  }
+
+  .right--1 {
+    right: -1rem;
+  }
+
+  .right-0 {
+    right: 0;
+  }
+
+  .right-1 {
+    right: 1rem;
+  }
+
+  .right-2 {
+    right: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .right--2 {
+    right: -2rem;
+  }
+
+  .right--1 {
+    right: -1rem;
+  }
+
+  .right-0 {
+    right: 0;
+  }
+
+  .right-1 {
+    right: 1rem;
+  }
+
+  .right-2 {
+    right: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .right--2 {
+    right: -2rem;
+  }
+
+  .right--1 {
+    right: -1rem;
+  }
+
+  .right-0 {
+    right: 0;
+  }
+
+  .right-1 {
+    right: 1rem;
+  }
+
+  .right-2 {
+    right: 2rem;
+  }
+}
+.left--2 {
+  left: -2rem;
+}
+
+.left--1 {
+  left: -1rem;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.left-1 {
+  left: 1rem;
+}
+
+.left-2 {
+  left: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+  .left--2 {
+    left: -2rem;
+  }
+
+  .left--1 {
+    left: -1rem;
+  }
+
+  .left-0 {
+    left: 0;
+  }
+
+  .left-1 {
+    left: 1rem;
+  }
+
+  .left-2 {
+    left: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .left--2 {
+    left: -2rem;
+  }
+
+  .left--1 {
+    left: -1rem;
+  }
+
+  .left-0 {
+    left: 0;
+  }
+
+  .left-1 {
+    left: 1rem;
+  }
+
+  .left-2 {
+    left: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .left--2 {
+    left: -2rem;
+  }
+
+  .left--1 {
+    left: -1rem;
+  }
+
+  .left-0 {
+    left: 0;
+  }
+
+  .left-1 {
+    left: 1rem;
+  }
+
+  .left-2 {
+    left: 2rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
