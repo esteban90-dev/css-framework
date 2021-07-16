@@ -371,6 +371,25 @@ body {
     padding-right: 0.75rem;
   }
 }
+.col {
+  width: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .col_sm {
+    width: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col_md {
+    width: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .col_lg {
+    width: auto;
+  }
+}
 /**
  * Links utility classes
  */

@@ -20,3 +20,15 @@
 }
 
 @include generate_grid_columns;
+
+.col {
+  width: auto;
+}
+
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
+  @media screen and (min-width: $breakpoint-value) {
+    .col_#{$breakpoint_key} {
+      width: auto;
+    }
+  }
+}
