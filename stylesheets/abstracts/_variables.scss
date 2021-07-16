@@ -212,6 +212,16 @@ $sizings: (
   "100": 100%
 );
 
+$spacings: (
+  "0": 0rem,
+  "1": .25rem,
+  "2": .5rem,
+  "3": 1rem,
+  "4": 2rem,
+  "5": 4rem,
+  "6": 8rem
+);
+
 $margin-spacings: (
   "auto": auto,
   "0": 0rem,
@@ -565,21 +575,12 @@ $width-selector: (
   "additional-properties": null
 );
 
-$min-width-selector: (
-  "selector-prefix": ".min-width",
-  "prefix-seperator": "-",
-  "property-name": "min-width",
-  "responsive": true,
-  "values": $sizings,
-  "additional-properties": null
-);
-
 $max-width-selector: (
   "selector-prefix": ".max-width",
   "prefix-seperator": "-",
   "property-name": "max-width",
   "responsive": true,
-  "values": $sizings,
+  "values": $spacings,
   "additional-properties": null
 );
 
