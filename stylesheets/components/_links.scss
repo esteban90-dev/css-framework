@@ -2,12 +2,6 @@
  * Links utility classes
  */
 
- .link {
-   text-decoration: none;
- }
-
- .link-underline, .link-underline-hover:hover {
-   text-decoration: underline;
- }
+ @include generate_class_selectors_from_map($link-text-decorations);
 
 

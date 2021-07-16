@@ -29,14 +29,24 @@
 
 @mixin generate_class_selectors_from_map($map) {
   @each $key, $value in map.get($map, "values") {
-    #{map.get($map, "selector-prefix")}#{$key} { #{map.get($map, "property-name")}: #{$value}; }
+    @if $key {
+      #{map.get($map, "selector-prefix")}#{map.get($map, "prefix-seperator")}#{$key} { #{map.get($map, "property-name")}: #{$value}; }
+    }
+    @else {
+      #{map.get($map, "selector-prefix")} { #{map.get($map, "property-name")}: #{$value}; }
+    }
   }
 
   @if map.get($map, "responsive") {
     @each $breakpoint_key, $breakpoint_value in $breakpoints {
       @media screen and (min-width: $breakpoint-value) {
         @each $key, $value in map.get($map, "values") {
-          #{map.get($map, "selector-prefix")}#{$key}_#{$breakpoint_key} { #{map.get($map, "property-name")}: #{$value}; }
+          @if $key {
+            #{map.get($map, "selector-prefix")}#{map.get($map, "prefix-seperator")}#{$key} { #{map.get($map, "property-name")}: #{$value}; }
+          }
+          @else {
+            #{map.get($map, "selector-prefix")} { #{map.get($map, "property-name")}: #{$value}; }
+          }
         }
       }
     }

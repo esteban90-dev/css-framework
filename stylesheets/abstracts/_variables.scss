@@ -8,8 +8,11 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir,
 $font-family-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; 
 $font-family-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; 
 
+$default-font-family: $font-family-sans-serif;
+
 $font-sizes: (
   "selector-prefix": ".h",
+  "prefix-seperator": "",
   "responsive": false,
   "property-name": "font-size",
   "values": (
@@ -25,7 +28,8 @@ $font-sizes: (
 $default-font-size: map.get($font-sizes, "6");
 
 $line-heights: (
-  "selector-prefix": ".lh-",
+  "selector-prefix": ".lh",
+  "prefix-seperator": "-",
   "property-name": "line-height",
   "responsive": false,
   "values": (
@@ -38,7 +42,8 @@ $line-heights: (
 $default-line-height: map.get($line-heights, "md");
 
 $font-weights: (
-  "selector-prefix": ".fw-",
+  "selector-prefix": ".fw",
+  "prefix-seperator": "-",
   "property-name": "font-weight",
   "responsive": false,
   "values": (
@@ -57,7 +62,8 @@ $font-weights: (
 );
 
 $font-styles: (
-  "selector-prefix": ".fs-",
+  "selector-prefix": ".fs",
+  "prefix-seperator": "-",
   "property-name": "font-style",
   "responsive": false,
   "values": (
@@ -66,8 +72,44 @@ $font-styles: (
   )
 );
 
+$link-text-decorations: (
+  "selector-prefix": ".link",
+  "prefix-seperator": "-",
+  "property-name": "text-decoration",
+  "responsive": false,
+  "values": (
+    "underline": underline,
+    "underline:hover": underline,
+    "no-underline": none
+  )
+);
+
+$list-style-types: (
+  "selector-prefix": ".list",
+  "prefix-seperator": "-",
+  "property-name": "list-style-type",
+  "responsive": false,
+  "values": (
+    null: none,
+    "numbered": roman,
+    "bulleted": disc
+  )
+);
+
+$list-style-positions: (
+  "selector-prefix": ".list",
+  "prefix-seperator": "-",
+  "property-name": "list-style-position",
+  "responsive": false,
+  "values": (
+    "inside": inside,
+    "outside": outside
+  )
+);
+
 $text-alignments: (
-  "selector-prefix": ".text-align-",
+  "selector-prefix": ".text-align",
+  "prefix-seperator": "-",
   "property-name": "text-align",
   "responsive": true,
   "values": (
@@ -103,21 +145,24 @@ $colors: (
 );
 
 $text-colors: (
-  "selector-prefix": ".text-",
+  "selector-prefix": ".text",
+  "prefix-seperator": "-",
   "property-name": "color",
   "responsive": true,
   "values": $colors
 );
 
 $background-colors: (
-  "selector-prefix": ".bg-",
+  "selector-prefix": ".bg",
+  "prefix-seperator": "-",
   "property-name": "background-color",
   "responsive": true,
   "values": $colors
 );
 
 $background-gradients: (
-  "selector-prefix": ".bg-gradient-",
+  "selector-prefix": ".bg-gradient",
+  "prefix-seperator": "-",
   "property-name": "background-image",
   "responsive": true,
   "values": (
@@ -128,7 +173,8 @@ $background-gradients: (
 );
 
 $border-widths: (
-  "selector-prefix": ".bw-",
+  "selector-prefix": ".bw",
+  "prefix-seperator": "-",
   "property-name": "border-width",
   "responsive": false,
   "values": (
@@ -144,7 +190,8 @@ $border-widths: (
 $border-width-default: map.get( map.get( $border-widths, "values"), "0" );
 
 $border-colors: (
-  "selector-prefix": ".bc-",
+  "selector-prefix": ".bc",
+  "prefix-seperator": "-",
   "property-name": "border-color",
   "responsive": false,
   "values": $colors
@@ -153,7 +200,8 @@ $border-colors: (
 $border-color-default: map.get( map.get( $border-colors, "values"), "black" );
 
 $border-radii: (
-  "selector-prefix": ".br-",
+  "selector-prefix": ".br",
+  "prefix-seperator": "-",
   "property-name": "border-radius",
   "responsive": false,
   "values": (
@@ -166,7 +214,8 @@ $border-radii: (
 );
 
 $display-values: (
-  "selector-prefix": ".display-",
+  "selector-prefix": ".display",
+  "prefix-seperator": "-",
   "property-name": "display",
   "responsive": true,
   "values": (
@@ -178,7 +227,8 @@ $display-values: (
 );
 
 $flex-directions: (
-  "selector-prefix": ".flex-",
+  "selector-prefix": ".flex",
+  "prefix-seperator": "-",
   "property-name": "flex-direction",
   "responsive": true,
   "values": (
@@ -190,7 +240,8 @@ $flex-directions: (
 );
 
 $flex-wraps: (
-  "selector-prefix": ".flex-",
+  "selector-prefix": ".flex",
+  "prefix-seperator": "-",
   "property-name": "flex-wrap",
   "responsive": true,
   "values": (
@@ -200,7 +251,8 @@ $flex-wraps: (
 );
 
 $flex-justifications: (
-  "selector-prefix": ".justify-",
+  "selector-prefix": ".justify",
+  "prefix-seperator": "-",
   "property-name": "justify-content",
   "responsive": true,
   "values": (
@@ -214,7 +266,8 @@ $flex-justifications: (
 );
 
 $flex-alignments: (
-  "selector-prefix": ".align-",
+  "selector-prefix": ".align",
+  "prefix-seperator": "-",
   "property-name": "align-items",
   "responsive": true,
   "values": (
@@ -226,7 +279,8 @@ $flex-alignments: (
 );
 
 $flex-align-selfs: (
-  "selector-prefix": ".align-self-",
+  "selector-prefix": ".align-self",
+  "prefix-seperator": "-",
   "property-name": "align-self",
   "responsive": true,
   "values": (
@@ -238,7 +292,8 @@ $flex-align-selfs: (
 );
 
 $flex-orders: (
-  "selector-prefix": ".order-",
+  "selector-prefix": ".order",
+  "prefix-seperator": "-",
   "property-name": "order",
   "responsive": true,
   "values": (

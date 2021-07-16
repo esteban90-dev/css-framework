@@ -2,16 +2,5 @@
  * Lists utility classes
  */
 
- .list {
-   list-style-type: none;
- }
-
- .list-numbered {
-   list-style-type: roman;
-   list-style-position: inside;
- }
-
- .list-bulleted {
-   list-style-type: disc;
-   list-style-position: inside;
- }
+ @include generate_class_selectors_from_map($list-style-types);
+ @include generate_class_selectors_from_map($list-style-positions);
