@@ -189,6 +189,13 @@ $position-values: (
   "2": 2rem
 );
 
+$box-shadows: (
+  "none": none,
+  "sm": 0 0 .5rem map.get($colors, "gray-500"),
+  "md": 0 0 1rem map.get($colors, "gray-500"),
+  "lg": 0 0 2rem map.get($colors, "gray-500"),
+);
+
 $breakpoints: (
   "sm": 576px,
   "md": 768px,
@@ -500,6 +507,15 @@ $position-right-selector: (
   "property-name": "right",
   "responsive": true,
   "values": $position-values,
+  "additional-properties": null
+);
+
+$box-shadow-selector: (
+  "selector-prefix": ".shadow",
+  "prefix-seperator": "-",
+  "property-name": "box-shadow",
+  "responsive": false,
+  "values": $box-shadows,
   "additional-properties": null
 );
 

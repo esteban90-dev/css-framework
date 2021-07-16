@@ -2454,5 +2454,23 @@ body {
     left: 2rem;
   }
 }
+/**
+ * Box shadow utility classes
+ */
+.shadow-none {
+  box-shadow: none;
+}
+
+.shadow-sm {
+  box-shadow: 0 0 0.5rem #adb5bd;
+}
+
+.shadow-md {
+  box-shadow: 0 0 1rem #adb5bd;
+}
+
+.shadow-lg {
+  box-shadow: 0 0 2rem #adb5bd;
+}
 
 /*# sourceMappingURL=main.css.map */
