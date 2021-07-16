@@ -61,33 +61,11 @@ table {
 /* default typeface */
 body {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.25;
 }
 
 /*default headers */
-h6 {
-  font-size: 1rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 2.25rem;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-h1 {
-  font-size: 5rem;
-}
-
 /* Layout Grid */
 .container {
   width: 100%;
@@ -434,185 +412,203 @@ h1 {
 /**
  * Border utility classes
  */
-/* additive borders */
-.b {
+/* border styles */
+.border {
   border-style: solid;
-}
-
-.bt {
-  border-top-style: solid;
-}
-
-.bb {
-  border-bottom-style: solid;
-}
-
-.bl {
-  border-left-style: solid;
-}
-
-.br {
-  border-right-style: solid;
-}
-
-.b, .bt, .bb, .bl, .br {
   border-color: #000;
   border-width: 0.0625rem;
 }
 
-/* subtractive borders */
-.b-0 {
+.border-none {
   border-style: none;
-}
-
-.bt-0 {
-  border-top-style: none;
-}
-
-.bb-0 {
-  border-bottom-style: none;
-}
-
-.bl-0 {
-  border-left-style: none;
-}
-
-.br-0 {
-  border-right-style: none;
-}
-
-/* border widths */
-.bw-0 {
+  border-color: #000;
   border-width: 0.0625rem;
 }
 
-.bw-1 {
+/* border top styles */
+.border-top {
+  border-top-style: solid;
+  border-color: #000;
+  border-width: 0.0625rem;
+}
+
+.border-top-none {
+  border-top-style: none;
+  border-color: #000;
+  border-width: 0.0625rem;
+}
+
+/* border bottom styles */
+.border-bottom {
+  border-bottom-style: solid;
+  border-color: #000;
+  border-width: 0.0625rem;
+}
+
+.border-bottom-none {
+  border-bottom-style: none;
+  border-color: #000;
+  border-width: 0.0625rem;
+}
+
+/* border left styles */
+.border-left {
+  border-left-style: solid;
+  border-color: #000;
+  border-width: 0.0625rem;
+}
+
+.border-left-none {
+  border-left-style: none;
+  border-color: #000;
+  border-width: 0.0625rem;
+}
+
+/* border right styles */
+.border {
+  border-right-style: solid;
+  border-color: #000;
+  border-width: 0.0625rem;
+}
+
+.border-none {
+  border-right-style: none;
+  border-color: #000;
+  border-width: 0.0625rem;
+}
+
+/* border widths */
+.border-width-0 {
+  border-width: 0.0625rem;
+}
+
+.border-width-1 {
   border-width: 0.125rem;
 }
 
-.bw-2 {
+.border-width-2 {
   border-width: 0.25rem;
 }
 
-.bw-3 {
+.border-width-3 {
   border-width: 0.5rem;
 }
 
-.bw-4 {
+.border-width-4 {
   border-width: 1rem;
 }
 
-.bw-5 {
+.border-width-5 {
   border-width: 2rem;
 }
 
 /* border colors */
-.bc-blue {
+.border-color-blue {
   border-color: #0d6efd;
 }
 
-.bc-indigo {
+.border-color-indigo {
   border-color: #6610f2;
 }
 
-.bc-purple {
+.border-color-purple {
   border-color: #6f42c1;
 }
 
-.bc-pink {
+.border-color-pink {
   border-color: #d63384;
 }
 
-.bc-red {
+.border-color-red {
   border-color: #dc3545;
 }
 
-.bc-orange {
+.border-color-orange {
   border-color: #fd7e14;
 }
 
-.bc-yellow {
+.border-color-yellow {
   border-color: #ffc107;
 }
 
-.bc-green {
+.border-color-green {
   border-color: #198754;
 }
 
-.bc-teal {
+.border-color-teal {
   border-color: #20c997;
 }
 
-.bc-cyan {
+.border-color-cyan {
   border-color: #0dcaf0;
 }
 
-.bc-white {
+.border-color-white {
   border-color: #fff;
 }
 
-.bc-gray-100 {
+.border-color-gray-100 {
   border-color: #f8f9fa;
 }
 
-.bc-gray-200 {
+.border-color-gray-200 {
   border-color: #e9ecef;
 }
 
-.bc-gray-300 {
+.border-color-gray-300 {
   border-color: #dee2e6;
 }
 
-.bc-gray-400 {
+.border-color-gray-400 {
   border-color: #ced4da;
 }
 
-.bc-gray-500 {
+.border-color-gray-500 {
   border-color: #adb5bd;
 }
 
-.bc-gray-600 {
+.border-color-gray-600 {
   border-color: #6c757d;
 }
 
-.bc-gray-700 {
+.border-color-gray-700 {
   border-color: #495057;
 }
 
-.bc-gray-800 {
+.border-color-gray-800 {
   border-color: #343a40;
 }
 
-.bc-gray-900 {
+.border-color-gray-900 {
   border-color: #212529;
 }
 
-.bc-black {
+.border-color-black {
   border-color: #000;
 }
 
 /* border radius */
-.br-1 {
+.border-radius-1 {
   border-radius: 0.25rem;
 }
 
-.br-2 {
+.border-radius-2 {
   border-radius: 0.5rem;
 }
 
-.br-3 {
+.border-radius-3 {
   border-radius: 0.75rem;
 }
 
-.br-4 {
+.border-radius-4 {
   border-radius: 1rem;
 }
 
-.br-5 {
+.border-radius-5 {
   border-radius: 2rem;
 }
 
-.br-circular {
+.border-radius-circular {
   border-radius: 100%;
 }
 

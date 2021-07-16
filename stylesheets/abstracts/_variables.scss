@@ -4,121 +4,13 @@
 
 @use 'sass:map';
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif; 
-$font-family-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; 
-$font-family-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; 
+//--------------------- GRID VALUES ---------------------//
 
-$default-font-family: $font-family-sans-serif;
+$horizontal-gutter-width: 1.5rem;
+$vertical-gutter-width: 1.5rem;
+$column-number: 12;
 
-$font-sizes: (
-  "selector-prefix": ".h",
-  "prefix-seperator": "",
-  "responsive": false,
-  "property-name": "font-size",
-  "values": (
-    "6": 1rem,
-    "5": 1.25rem,
-    "4": 1.5rem,
-    "3": 2.25rem,
-    "2": 3rem,
-    "1": 5rem
-  )
-);
-
-$default-font-size: map.get($font-sizes, "6");
-
-$line-heights: (
-  "selector-prefix": ".lh",
-  "prefix-seperator": "-",
-  "property-name": "line-height",
-  "responsive": false,
-  "values": (
-    "1": 1,
-    "md": 1.25,
-    "lg": 1.5
-  )
-);
-
-$default-line-height: map.get($line-heights, "md");
-
-$font-weights: (
-  "selector-prefix": ".fw",
-  "prefix-seperator": "-",
-  "property-name": "font-weight",
-  "responsive": false,
-  "values": (
-    "100": 100,
-    "200": 200,
-    "300": 300,
-    "400": 400,
-    "500": 500,
-    "600": 600,
-    "700": 700,
-    "800": 800,
-    "900": 900,
-    "normal": 400,
-    "bold": 700
-  )
-);
-
-$font-styles: (
-  "selector-prefix": ".fs",
-  "prefix-seperator": "-",
-  "property-name": "font-style",
-  "responsive": false,
-  "values": (
-    "normal": normal,
-    "italic": italic
-  )
-);
-
-$link-text-decorations: (
-  "selector-prefix": ".link",
-  "prefix-seperator": "-",
-  "property-name": "text-decoration",
-  "responsive": false,
-  "values": (
-    "underline": underline,
-    "underline:hover": underline,
-    "no-underline": none
-  )
-);
-
-$list-style-types: (
-  "selector-prefix": ".list",
-  "prefix-seperator": "-",
-  "property-name": "list-style-type",
-  "responsive": false,
-  "values": (
-    null: none,
-    "numbered": roman,
-    "bulleted": disc
-  )
-);
-
-$list-style-positions: (
-  "selector-prefix": ".list",
-  "prefix-seperator": "-",
-  "property-name": "list-style-position",
-  "responsive": false,
-  "values": (
-    "inside": inside,
-    "outside": outside
-  )
-);
-
-$text-alignments: (
-  "selector-prefix": ".text-align",
-  "prefix-seperator": "-",
-  "property-name": "text-align",
-  "responsive": true,
-  "values": (
-    "left": left,
-    "center": center,
-    "right": right,
-    "justify": justify
-  )
-);
+//-------------------- VALUE LISTS -----------------------//
 
 $colors: (
   "blue":     #0d6efd,
@@ -144,166 +36,141 @@ $colors: (
   "black":    #000,
 );
 
-$text-colors: (
-  "selector-prefix": ".text",
-  "prefix-seperator": "-",
-  "property-name": "color",
-  "responsive": true,
-  "values": $colors
+$font-sizes: (
+  "6": 1rem,
+  "5": 1.25rem,
+  "4": 1.5rem,
+  "3": 2.25rem,
+  "2": 3rem,
+  "1": 5rem
 );
 
-$background-colors: (
-  "selector-prefix": ".bg",
-  "prefix-seperator": "-",
-  "property-name": "background-color",
-  "responsive": true,
-  "values": $colors
+$font-weights: (
+  "100": 100,
+  "200": 200,
+  "300": 300,
+  "400": 400,
+  "500": 500,
+  "600": 600,
+  "700": 700,
+  "800": 800,
+  "900": 900,
+  "normal": 400,
+  "bold": 700
+);
+
+$font-styles: (
+  "normal": normal,
+  "italic": italic
+);
+
+$line-heights: (
+  "1": 1,
+  "md": 1.25,
+  "lg": 1.5
+);
+
+$link-styles: (
+  "underline": underline,
+  "underline:hover": underline,
+  "no-underline": none
+);
+
+$list-styles: (
+  null: none,
+  "numbered": roman,
+  "bulleted": disc
+);
+
+$list-positions: (
+  "inside": inside,
+  "outside": outside
+);
+
+$text-alignments: (
+  "left": left,
+  "center": center,
+  "right": right,
+  "justify": justify
 );
 
 $background-gradients: (
-  "selector-prefix": ".bg-gradient",
-  "prefix-seperator": "-",
-  "property-name": "background-image",
-  "responsive": true,
-  "values": (
-    "1": linear-gradient(180deg, rgba(255, 255, 255, 0.329), rgba(255, 255, 255, 0)),
-    "2": linear-gradient(180deg, rgba(255, 255, 255, 0.493), rgba(255, 255, 255, 0)),
-    "3": linear-gradient(180deg, rgba(255, 255, 255, 0.747), rgba(255, 255, 255, 0))
-  )
+  "1": linear-gradient(180deg, rgba(255, 255, 255, 0.329), rgba(255, 255, 255, 0)),
+  "2": linear-gradient(180deg, rgba(255, 255, 255, 0.493), rgba(255, 255, 255, 0)),
+  "3": linear-gradient(180deg, rgba(255, 255, 255, 0.747), rgba(255, 255, 255, 0))
+);
+
+$border-styles: (
+  null: solid,
+  "none": none
 );
 
 $border-widths: (
-  "selector-prefix": ".bw",
-  "prefix-seperator": "-",
-  "property-name": "border-width",
-  "responsive": false,
-  "values": (
-    "0": .0625rem,
-    "1": .125rem,
-    "2": .25rem,
-    "3": .5rem,
-    "4": 1rem,
-    "5": 2rem
-  )
+  "0": .0625rem,
+  "1": .125rem,
+  "2": .25rem,
+  "3": .5rem,
+  "4": 1rem,
+  "5": 2rem
 );
-
-$border-width-default: map.get( map.get( $border-widths, "values"), "0" );
-
-$border-colors: (
-  "selector-prefix": ".bc",
-  "prefix-seperator": "-",
-  "property-name": "border-color",
-  "responsive": false,
-  "values": $colors
-);
-
-$border-color-default: map.get( map.get( $border-colors, "values"), "black" );
 
 $border-radii: (
-  "selector-prefix": ".br",
-  "prefix-seperator": "-",
-  "property-name": "border-radius",
-  "responsive": false,
-  "values": (
-    "1": .25rem,
-    "2": .5rem,
-    "3": .75rem,
-    "4": 1rem,
-    "5": 2rem
-  )
+  "1": .25rem,
+  "2": .5rem,
+  "3": .75rem,
+  "4": 1rem,
+  "5": 2rem
 );
 
-$display-values: (
-  "selector-prefix": ".display",
-  "prefix-seperator": "-",
-  "property-name": "display",
-  "responsive": true,
-  "values": (
-    "none": "none",
-    "block": "block",
-    "inline-block": "inline-block",
-    "flex": "flex"
-  )
+$displays: (
+  "none": "none",
+  "block": "block",
+  "inline-block": "inline-block",
+  "flex": "flex"
 );
 
 $flex-directions: (
-  "selector-prefix": ".flex",
-  "prefix-seperator": "-",
-  "property-name": "flex-direction",
-  "responsive": true,
-  "values": (
-    "row": "row",
-    "col": "column",
-    "row-reverse": "row-reverse",
-    "col-reverse": "column-reverse"
-  )
+  "row": "row",
+  "col": "column",
+  "row-reverse": "row-reverse",
+  "col-reverse": "column-reverse"
 );
 
 $flex-wraps: (
-  "selector-prefix": ".flex",
-  "prefix-seperator": "-",
-  "property-name": "flex-wrap",
-  "responsive": true,
-  "values": (
-    "wrap": "wrap",
-    "no-wrap": "no-wrap"
-  )
+  "wrap": "wrap",
+  "no-wrap": "no-wrap"
 );
 
 $flex-justifications: (
-  "selector-prefix": ".justify",
-  "prefix-seperator": "-",
-  "property-name": "justify-content",
-  "responsive": true,
-  "values": (
-    "start": "flex-start",
-    "center": "center",
-    "end": "flex-end",
-    "between": "space-between",
-    "around": "space-around",
-    "evenly": "space-evenly"
-  )
+  "start": "flex-start",
+  "center": "center",
+  "end": "flex-end",
+  "between": "space-between",
+  "around": "space-around",
+  "evenly": "space-evenly"
 );
 
 $flex-alignments: (
-  "selector-prefix": ".align",
-  "prefix-seperator": "-",
-  "property-name": "align-items",
-  "responsive": true,
-  "values": (
-    "start": "flex-start",
-    "center": "center",
-    "end": "flex-end",
-    "stretch": "stretch"
-  )
+  "start": "flex-start",
+  "center": "center",
+  "end": "flex-end",
+  "stretch": "stretch"
 );
 
-$flex-align-selfs: (
-  "selector-prefix": ".align-self",
-  "prefix-seperator": "-",
-  "property-name": "align-self",
-  "responsive": true,
-  "values": (
-    "start": "flex-start",
-    "center": "center",
-    "end": "flex-end",
-    "stretch": "stretch"
-  )
+$flex-align-selves: (
+  "start": "flex-start",
+  "center": "center",
+  "end": "flex-end",
+  "stretch": "stretch"
 );
 
 $flex-orders: (
-  "selector-prefix": ".order",
-  "prefix-seperator": "-",
-  "property-name": "order",
-  "responsive": true,
-  "values": (
-    "0": 0,
-    "1": 1,
-    "2": 2,
-    "3": 3,
-    "4": 4,
-    "5": 5
-  )
+  "0": 0,
+  "1": 1,
+  "2": 2,
+  "3": 3,
+  "4": 4,
+  "5": 5
 );
 
 $breakpoints: (
@@ -312,6 +179,266 @@ $breakpoints: (
   "lg": 992px 
 );
 
-$horizontal-gutter-width: 1.5rem;
-$vertical-gutter-width: 1.5rem;
-$column-number: 12;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif; 
+$font-family-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; 
+$font-family-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; 
+
+// -------------------- DEFAULTS -----------------------//
+
+$default-font-family: $font-family-sans-serif;
+$default-border-width: map.get( $border-widths, "0" );
+$default-border-color: map.get( $colors, "black");
+$default-font-size: map.get($font-sizes, "6");
+$default-line-height: map.get($line-heights, "md");
+
+// -------------------- SELECTOR MAPS -----------------------//
+
+$font-size-selector: (
+  "selector-prefix": ".h",
+  "prefix-seperator": "",
+  "responsive": false,
+  "property-name": "font-size",
+  "values": $font-sizes,
+  "additional-properties": null
+);
+
+$line-height-selector: (
+  "selector-prefix": ".lh",
+  "prefix-seperator": "-",
+  "property-name": "line-height",
+  "responsive": false,
+  "values": $line-heights,
+  "additional-properties": null
+);
+
+$font-weight-selector: (
+  "selector-prefix": ".fw",
+  "prefix-seperator": "-",
+  "property-name": "font-weight",
+  "responsive": false,
+  "values": $font-weights,
+  "additional-properties": null
+);
+
+$font-style-selector: (
+  "selector-prefix": ".fs",
+  "prefix-seperator": "-",
+  "property-name": "font-style",
+  "responsive": false,
+  "values": $font-styles,
+  "additional-properties": null
+);
+
+$link-selector: (
+  "selector-prefix": ".link",
+  "prefix-seperator": "-",
+  "property-name": "text-decoration",
+  "responsive": false,
+  "values": $link-styles,
+  "additional-properties": null
+);
+
+$list-style-selector: (
+  "selector-prefix": ".list",
+  "prefix-seperator": "-",
+  "property-name": "list-style-type",
+  "responsive": false,
+  "values": $list-styles,
+  "additional-properties": null
+);
+
+$list-position-selector: (
+  "selector-prefix": ".list",
+  "prefix-seperator": "-",
+  "property-name": "list-style-position",
+  "responsive": false,
+  "values": $list-positions,
+  "additional-properties": null
+);
+
+$text-alignment-selector: (
+  "selector-prefix": ".text-align",
+  "prefix-seperator": "-",
+  "property-name": "text-align",
+  "responsive": true,
+  "values": $text-alignments,
+  "additional-properties": null
+);
+
+
+$text-color-selector: (
+  "selector-prefix": ".text",
+  "prefix-seperator": "-",
+  "property-name": "color",
+  "responsive": true,
+  "values": $colors,
+  "additional-properties": null
+);
+
+$background-color-selector: (
+  "selector-prefix": ".bg",
+  "prefix-seperator": "-",
+  "property-name": "background-color",
+  "responsive": true,
+  "values": $colors,
+  "additional-properties": null
+);
+
+$background-gradient-selector: (
+  "selector-prefix": ".bg-gradient",
+  "prefix-seperator": "-",
+  "property-name": "background-image",
+  "responsive": true,
+  "values": $background-gradients,
+  "additional-properties": null
+);
+
+$border-style-selector: (
+  "selector-prefix": ".border",
+  "prefix-seperator": "-",
+  "property-name": "border-style",
+  "responsive": false,
+  "values": $border-styles,
+  "additional-properties": (
+    "border-color": $default-border-color,
+    "border-width": $default-border-width
+  )
+);
+
+$border-top-style-selector: (
+  "selector-prefix": ".border-top",
+  "prefix-seperator": "-",
+  "property-name": "border-top-style",
+  "responsive": false,
+  "values": $border-styles,
+  "additional-properties": (
+    "border-color": $default-border-color,
+    "border-width": $default-border-width
+  )
+);
+
+$border-bottom-style-selector: (
+  "selector-prefix": ".border-bottom",
+  "prefix-seperator": "-",
+  "property-name": "border-bottom-style",
+  "responsive": false,
+  "values": $border-styles,
+  "additional-properties": (
+    "border-color": $default-border-color,
+    "border-width": $default-border-width
+  )
+);
+
+$border-left-style-selector: (
+  "selector-prefix": ".border-left",
+  "prefix-seperator": "-",
+  "property-name": "border-left-style",
+  "responsive": false,
+  "values": $border-styles,
+  "additional-properties": (
+    "border-color": $default-border-color,
+    "border-width": $default-border-width
+  )
+);
+
+$border-right-style-selector: (
+  "selector-prefix": ".border",
+  "prefix-seperator": "-",
+  "property-name": "border-right-style",
+  "responsive": false,
+  "values": $border-styles,
+  "additional-properties": (
+    "border-color": $default-border-color,
+    "border-width": $default-border-width
+  )
+);
+
+$border-width-selector: (
+  "selector-prefix": ".border-width",
+  "prefix-seperator": "-",
+  "property-name": "border-width",
+  "responsive": false,
+  "values": $border-widths,
+  "additional-properties": null
+);
+
+$border-color-selector: (
+  "selector-prefix": ".border-color",
+  "prefix-seperator": "-",
+  "property-name": "border-color",
+  "responsive": false,
+  "values": $colors
+);
+
+$border-radius-selector: (
+  "selector-prefix": ".border-radius",
+  "prefix-seperator": "-",
+  "property-name": "border-radius",
+  "responsive": false,
+  "values": $border-radii,
+  "additional-properties": null
+);
+
+$display-selector: (
+  "selector-prefix": ".display",
+  "prefix-seperator": "-",
+  "property-name": "display",
+  "responsive": true,
+  "values": $displays,
+  "additional-properties": null
+);
+
+$flex-direction-selector: (
+  "selector-prefix": ".flex",
+  "prefix-seperator": "-",
+  "property-name": "flex-direction",
+  "responsive": true,
+  "values": $flex-directions,
+  "additional-properties": null
+);
+
+$flex-wrap-selector: (
+  "selector-prefix": ".flex",
+  "prefix-seperator": "-",
+  "property-name": "flex-wrap",
+  "responsive": true,
+  "values": $flex-wraps,
+  "additional-properties": null
+);
+
+$flex-justification-selector: (
+  "selector-prefix": ".justify",
+  "prefix-seperator": "-",
+  "property-name": "justify-content",
+  "responsive": true,
+  "values": $flex-justifications,
+  "additional-properties": null
+);
+
+$flex-alignment-selector: (
+  "selector-prefix": ".align",
+  "prefix-seperator": "-",
+  "property-name": "align-items",
+  "responsive": true,
+  "values": $flex-alignments,
+  "additional-properties": null
+);
+
+$flex-align-self-selector: (
+  "selector-prefix": ".align-self",
+  "prefix-seperator": "-",
+  "property-name": "align-self",
+  "responsive": true,
+  "values": $flex-align-selves,
+  "additional-properties": null
+);
+
+$flex-order-selector: (
+  "selector-prefix": ".order",
+  "prefix-seperator": "-",
+  "property-name": "order",
+  "responsive": true,
+  "values": $flex-orders,
+  "additional-properties": null
+);
+

@@ -3,11 +3,11 @@
  */
 
  /* flex parents */ 
- @include generate_class_selectors_from_map($flex-directions);
- @include generate_class_selectors_from_map($flex-wraps);
- @include generate_class_selectors_from_map($flex-justifications);
- @include generate_class_selectors_from_map($flex-alignments);
+ @include generate_class_selectors_from_map($flex-direction-selector);
+ @include generate_class_selectors_from_map($flex-wrap-selector);
+ @include generate_class_selectors_from_map($flex-justification-selector);
+ @include generate_class_selectors_from_map($flex-alignment-selector);
 
  /* flex children */
- @include generate_class_selectors_from_map($flex-align-selfs);
- @include generate_class_selectors_from_map($flex-orders);
+ @include generate_class_selectors_from_map($flex-align-self-selector);
+ @include generate_class_selectors_from_map($flex-order-selector);

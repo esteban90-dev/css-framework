@@ -3,4 +3,4 @@
  */
 
 /* display values */
-@include generate_class_selectors_from_map($display-values);
+@include generate_class_selectors_from_map($display-selector);

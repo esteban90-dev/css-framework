@@ -2,62 +2,30 @@
  * Border utility classes
  */
 
-/* additive borders */
-.b {
-  border-style: solid;
-}
+/* border styles */
+@include generate_class_selectors_from_map($border-style-selector);
 
-.bt {
-  border-top-style: solid;
-}
+/* border top styles */
+@include generate_class_selectors_from_map($border-top-style-selector);
 
-.bb {
-  border-bottom-style: solid;
-}
+/* border bottom styles */
+@include generate_class_selectors_from_map($border-bottom-style-selector);
 
-.bl {
-  border-left-style: solid;
-}
+/* border left styles */
+@include generate_class_selectors_from_map($border-left-style-selector);
 
-.br {
-  border-right-style: solid;
-}
-
-.b, .bt, .bb, .bl, .br {
-  border-color: $border-color-default;
-  border-width: $border-width-default;
-}
-
-/* subtractive borders */
-.b-0 {
-  border-style: none;
-}
-
-.bt-0 {
-  border-top-style: none;
-}
-
-.bb-0 {
-  border-bottom-style: none;
-}
-
-.bl-0 {
-  border-left-style: none;
-}
-
-.br-0 {
-  border-right-style: none;
-}
+/* border right styles */
+@include generate_class_selectors_from_map($border-right-style-selector);
 
 /* border widths */ 
-@include generate_class_selectors_from_map($border-widths);
+@include generate_class_selectors_from_map($border-width-selector);
 
 /* border colors */ 
-@include generate_class_selectors_from_map($border-colors);
+@include generate_class_selectors_from_map($border-color-selector);
 
 /* border radius */
-@include generate_class_selectors_from_map($border-radii);
+@include generate_class_selectors_from_map($border-radius-selector);
 
-.br-circular {
+.border-radius-circular {
   border-radius: 100%;
 }

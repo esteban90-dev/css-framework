@@ -19,20 +19,20 @@
 }
 
 /* type scale - headers */
-@include generate_class_selectors_from_map($font-sizes);
+@include generate_class_selectors_from_map($font-size-selector);
 
 /* line height */
-@include generate_class_selectors_from_map($line-heights);
+@include generate_class_selectors_from_map($line-height-selector);
 
 /* font-weight */
-@include generate_class_selectors_from_map($font-weights);
+@include generate_class_selectors_from_map($font-weight-selector);
 
 /* font-styles */
-@include generate_class_selectors_from_map($font-styles);
+@include generate_class_selectors_from_map($font-style-selector);
 
 /* text-alignments */
-@include generate_class_selectors_from_map($text-alignments);
+@include generate_class_selectors_from_map($text-alignment-selector);
 
 /* text-colors */
-@include generate_class_selectors_from_map($text-colors);
+@include generate_class_selectors_from_map($text-color-selector);
 

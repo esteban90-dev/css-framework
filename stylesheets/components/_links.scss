@@ -2,6 +2,6 @@
  * Links utility classes
  */
 
- @include generate_class_selectors_from_map($link-text-decorations);
+ @include generate_class_selectors_from_map($link-selector);
 
 
