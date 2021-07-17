@@ -8,35 +8,104 @@
   </head>
 
   <body>
-    <div class="container pl-3_sm pr-3_sm">
-      <div class="row justify-center">
-        <div class="col-12">
-          <div class="row justify-center">
-            <div class="col-12 col-6_md bg-gray-300">
-              testtesttest
-              <input type="button" value="testtesttest">
-            </div>
-            <div class="col-12 col-6_md bg-gray-300">
-              testtesttest
-            </div>
-            <div class="col-12 col-6_md bg-gray-300">
-              testtesttest  
-            </div>
-          </div>
-        </div>
+    <main class="container m-auto max-width-90 max-width-70_lg">
+      <div class="row">
+        <header class="col-12">
+          <h3 class="text-center mt-3">CSS Framework</h3>
+          <hr class="border-color-gray-300 mt-4 mb-4">
+        </header>
       </div>
       <div class="row">
-        <div class="col-4 bg-gray-300">
-          testtesttest
-          <input type="button" value="testtesttest">
-        </div>
-        <div class="col-4 bg-gray-300">
-          testtesttest
-        </div>
-        <div class="col-4 bg-gray-300">
-          testtesttest  
-        </div>
+        <nav class="col-12">
+          <h4>Table of Contents</h4>
+          <ul class="list list-bulleted list-inside mb-3">
+            <li><a href="#" class="link-no-underline" class="link-no-underline">Layout</a></li>
+            <li><a href="#" class="link-no-underline">Typography</a></li>
+            <li><a href="#" class="link-no-underline">Backgrounds</a></li>
+            <li><a href="#" class="link-no-underline">Borders</a></li>
+            <li><a href="#" class="link-no-underline">Box Shadows</a></li>
+            <li><a href="#" class="link-no-underline">Display</a></li>
+            <li><a href="#" class="link-no-underline">Flex</a></li>
+            <li><a href="#" class="link-no-underline">Links</a></li>
+            <li><a href="#" class="link-no-underline">Lists</a></li>
+            <li><a href="#" class="link-no-underline">Position</a></li>
+            <li><a href="#" class="link-no-underline">Sizing</a></li>
+            <li><a href="#" class="link-no-underline">Spacing</a></li>
+          </ul>
+        </nav>
+        <article class="col-12">
+          <h4 class="mb-3">About</h4>
+          <p>This is a basic 12 column grid CSS framework.  It is 'utility first'.  No pre-built '.button', '.navbar', '.dropdown', or '.card' classes are provided.</p><br>
+          <p>Users are encouraged to style elements by directly adding the basic utility classes in their HTML.  For example, insead of styling a button by adding a '.button' class to an input element, a variety of perhaps '.border', '.background-color', '.padding', and '.box-shadow' classes may be added to the input element to style the button.</p><br>
+          <p>This approach was chosen for the ease of the creation, maintenance, and extension of the framework.  At some point, if desired, component classes can be extracted.  As you get used to the class names, you'll eventually be able to style entire pages without ever looking at the CSS.  More can be read about the 'utility first' concept <a href="https://tailwindcss.com/docs/utility-first#maintainability-concerns" target="_blank" class="link-no-underline">here</a>.</p>
+        </article>
+        <article class="col-12">
+          <h4 class="mb-3">Layout</h4>
+          <p>A basic layout using this framework is achieved with three main parts: the container, the row, and the column.</p><br>
+          <p>The purpose of the container is to contain rows.  By default, the container has a 100% width.</p><br>
+          <p>Rows are flex containers, and are used to contain columns.  They use negative margins to counter the padding of the oolumns.  Without the negative margins, content in nested rows/columns would not align properly.  Rows have a default vertical padding gutter of 24 pixels.</p><br>
+          <p>Columns are the flex children of rows, and they contain your content.  Columns have a default horizontal padding gutter of 24 pixels.  As you can see below, any combination of columns can fit into a row - once the overall widths add up to over 100%, the row will wrap the remaining columns.</p><br>
+          
+          <p>.container</p>
+          <div class="container border p-4 bg-gray-500">
+            <p>.row</p>
+            <div class="row border p-3 bg-gray-400">
+              <div class="col-1 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-1</p></div>
+              <div class="col-1 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-1</p></div>
+              <div class="col-1 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-1</p></div>
+              <div class="col-1 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-1</p></div>
+              <div class="col-1 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-1</p></div>
+              <div class="col-1 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-1</p></div>
+              <div class="col-1 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-1</p></div>
+              <div class="col-1 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-1</p></div>
+              <div class="col-1 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-1</p></div>
+              <div class="col-1 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-1</p></div>
+              <div class="col-1 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-1</p></div>
+              <div class="col-1 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-1</p></div>
+            </div>
+            <br>
+            <p>.row</p>
+            <div class="row border p-3 bg-gray-400">
+              <div class="col-2 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-2</p></div>
+              <div class="col-2 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-2</p></div>
+              <div class="col-2 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-2</p></div>
+              <div class="col-2 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-2</p></div>
+              <div class="col-2 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-2</p></div>
+              <div class="col-2 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-2</p></div>
+            </div>
+            <br>
+            <p>.row</p>
+            <div class="row border p-3 bg-gray-400">
+              <div class="col-3 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-3</p></div>
+              <div class="col-3 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-3</p></div>
+              <div class="col-3 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-3</p></div>
+              <div class="col-3 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-3</p></div>
+            </div>
+            <br>
+            <p>.row</p>
+            <div class="row border p-3 bg-gray-400">
+              <div class="col-4 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-4</p></div>
+              <div class="col-4 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-4</p></div>
+              <div class="col-4 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-4</p></div>
+            </div>
+            <br>
+            <p>.row</p>
+            <div class="row border p-3 bg-gray-400">
+              <div class="col-6 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-6</p></div>
+              <div class="col-6 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-6</p></div>
+            </div>
+            <br>
+            <p>.row</p>
+            <div class="row border p-3 bg-gray-400">
+              <div class="col-12 border pt-3 pb-3 bg-gray-100"><p class="text-center">.col-12</p></div>
+            </div>
+          </div>
+            
+            
+          
+          
+        </article>
       </div>
-    </div>
+    </main>
   </body>
 </html>
