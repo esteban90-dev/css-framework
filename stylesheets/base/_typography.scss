@@ -12,7 +12,7 @@ body {
 }
 
 /*default headers */
-@each $key, $value in map.get($font-sizes, "values") {
+@each $key, $value in map.get($font-size-selector, "values") {
   h#{$key} { font-size: $value }
 }
 
