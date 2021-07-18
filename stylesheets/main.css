@@ -66,6 +66,30 @@ body {
 }
 
 /*default headers */
+h6 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
 /* Layout Grid */
 .container {
   width: 100%;
@@ -3940,70 +3964,70 @@ body {
 }
 
 /* text-alignments */
-.text-align-left {
+.text-left {
   text-align: left;
 }
 
-.text-align-center {
+.text-center {
   text-align: center;
 }
 
-.text-align-right {
+.text-right {
   text-align: right;
 }
 
-.text-align-justify {
+.text-justify {
   text-align: justify;
 }
 
 @media screen and (min-width: 576px) {
-  .text-align-left_sm {
+  .text-left_sm {
     text-align: left;
   }
 
-  .text-align-center_sm {
+  .text-center_sm {
     text-align: center;
   }
 
-  .text-align-right_sm {
+  .text-right_sm {
     text-align: right;
   }
 
-  .text-align-justify_sm {
+  .text-justify_sm {
     text-align: justify;
   }
 }
 @media screen and (min-width: 768px) {
-  .text-align-left_md {
+  .text-left_md {
     text-align: left;
   }
 
-  .text-align-center_md {
+  .text-center_md {
     text-align: center;
   }
 
-  .text-align-right_md {
+  .text-right_md {
     text-align: right;
   }
 
-  .text-align-justify_md {
+  .text-justify_md {
     text-align: justify;
   }
 }
 @media screen and (min-width: 992px) {
-  .text-align-left_lg {
+  .text-left_lg {
     text-align: left;
   }
 
-  .text-align-center_lg {
+  .text-center_lg {
     text-align: center;
   }
 
-  .text-align-right_lg {
+  .text-right_lg {
     text-align: right;
   }
 
-  .text-align-justify_lg {
+  .text-justify_lg {
     text-align: justify;
   }
 }
