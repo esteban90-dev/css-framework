@@ -45,6 +45,12 @@ $font-sizes: (
   "1": 5rem
 );
 
+$small-font-sizes: (
+  "sm": .875rem,
+  "xs": .75rem,
+  "xxs": .625rem
+);
+
 $font-weights: (
   "100": 100,
   "200": 200,
@@ -269,6 +275,15 @@ $font-size-selector: (
   "responsive": false,
   "property-name": "font-size",
   "values": $font-sizes,
+  "additional-properties": null
+);
+
+$small-font-size-selector: (
+  "selector-prefix": ".text",
+  "prefix-seperator": "-",
+  "responsive": false,
+  "property-name": "font-size",
+  "values": $small-font-sizes,
   "additional-properties": null
 );
 

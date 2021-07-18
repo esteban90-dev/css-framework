@@ -21,6 +21,9 @@
 /* type scale - headers */
 @include generate_class_selectors_from_map($font-size-selector);
 
+/* type scale - small text sizes */ 
+@include generate_class_selectors_from_map($small-font-size-selector);
+
 /* line height */
 @include generate_class_selectors_from_map($line-height-selector);
 
