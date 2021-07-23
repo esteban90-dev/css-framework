@@ -3,10 +3,13 @@
  */
 
 /* width styles */
-@include generate_class_selectors_from_map($width-selector);
+@include generate_class_selectors_from_map($width-percentage-selector);
+@include generate_class_selectors_from_map($width-scale-selector);
 
 /* max-width styles */
-@include generate_class_selectors_from_map($max-width-selector);
+@include generate_class_selectors_from_map($max-width-percentage-selector);
+@include generate_class_selectors_from_map($max-width-scale-selector);
 
 /* height styles */
-@include generate_class_selectors_from_map($height-selector);
+@include generate_class_selectors_from_map($height-percentage-selector);
+@include generate_class_selectors_from_map($height-scale-selector);

@@ -203,7 +203,7 @@ $box-shadows: (
   "lg": 0 0 2rem map.get($colors, "gray-500"),
 );
 
-$sizings: (
+$sizing-percentages: (
   "auto": auto,
   "0": 0%,
   "10": 10%,
@@ -216,6 +216,15 @@ $sizings: (
   "80": 80%,
   "90": 90%,
   "100": 100%
+);
+
+$sizing-scales: (
+  "1": .25rem,
+  "2": .5rem,
+  "3": 1rem,
+  "4": 2rem,
+  "5": 4rem,
+  "6": 8rem
 );
 
 $spacings: (
@@ -581,30 +590,57 @@ $box-shadow-selector: (
   "additional-properties": null
 );
 
-$width-selector: (
+$width-percentage-selector: (
   "selector-prefix": ".width",
   "prefix-seperator": "-",
   "property-name": "width",
   "responsive": true,
-  "values": $sizings,
+  "values": $sizing-percentages,
   "additional-properties": null
 );
 
-$max-width-selector: (
+$width-scale-selector: (
+  "selector-prefix": ".width",
+  "prefix-seperator": "-",
+  "property-name": "width",
+  "responsive": true,
+  "values": $sizing-scales,
+  "additional-properties": null
+);
+
+$max-width-percentage-selector: (
   "selector-prefix": ".max-width",
   "prefix-seperator": "-",
   "property-name": "max-width",
   "responsive": true,
-  "values": $sizings,
+  "values": $sizing-percentages,
   "additional-properties": null
 );
 
-$height-selector: (
+$max-width-scale-selector: (
+  "selector-prefix": ".max-width",
+  "prefix-seperator": "-",
+  "property-name": "max-width",
+  "responsive": true,
+  "values": $sizing-scales,
+  "additional-properties": null
+);
+
+$height-percentage-selector: (
   "selector-prefix": ".height",
   "prefix-seperator": "-",
   "property-name": "height",
   "responsive": true,
-  "values": $sizings,
+  "values": $sizing-percentages,
+  "additional-properties": null
+);
+
+$height-scale-selector: (
+  "selector-prefix": ".height",
+  "prefix-seperator": "-",
+  "property-name": "height",
+  "responsive": true,
+  "values": $sizing-scales,
   "additional-properties": null
 );
 
