@@ -29,3 +29,11 @@
 .border-radius-circular {
   border-radius: 100%;
 }
+
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
+  @media screen and (min-width: $breakpoint-value) {
+    .border-radius-circular_#{$breakpoint-key} { 
+      border-radius: 100%;
+    }
+  }
+}

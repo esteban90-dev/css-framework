@@ -8,14 +8,38 @@
   font-family: $font-family-sans-serif;
 }
 
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
+  @media screen and (min-width: $breakpoint-value) {
+    .sans-serif_#{$breakpoint-key} { 
+      font-family: $font-family-sans-serif;
+    }
+  }
+}
+
 /* serif typeface */
 .serif {
   font-family: $font-family-serif;
 }
 
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
+  @media screen and (min-width: $breakpoint-value) {
+    .serif_#{$breakpoint-key} { 
+      font-family: $font-family-serif;
+    }
+  }
+}
+
 /* sans-serif typeface */
 .mono {
   font-family: $font-family-mono;
+}
+
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
+  @media screen and (min-width: $breakpoint-value) {
+    .mono_#{$breakpoint-key} { 
+      font-family: $font-family-mono;
+    }
+  }
 }
 
 /* type scale - headers */
