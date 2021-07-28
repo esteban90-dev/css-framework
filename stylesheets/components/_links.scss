@@ -4,4 +4,14 @@
 
  @include generate_class_selectors_from_map($link-selector);
 
+ .link-underline-hover:hover {
+  text-decoration: underline;
+}
 
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
+  @media screen and (min-width: $breakpoint-value) {
+    .link-underline-hover_#{$breakpoint-key}:hover { 
+      text-decoration: underline;
+    }
+  }
+}
