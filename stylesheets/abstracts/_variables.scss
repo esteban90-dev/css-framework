@@ -628,15 +628,6 @@ $max-width-scale-selector: (
   "additional-properties": null
 );
 
-$height-percentage-selector: (
-  "selector-prefix": ".height",
-  "prefix-seperator": "-",
-  "property-name": "height",
-  "responsive": true,
-  "values": $sizing-percentages,
-  "additional-properties": null
-);
-
 $height-scale-selector: (
   "selector-prefix": ".height",
   "prefix-seperator": "-",
