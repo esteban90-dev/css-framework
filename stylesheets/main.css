@@ -2377,10 +2377,6 @@ h1 {
   position: fixed;
 }
 
-.sticky {
-  position: sticky;
-}
-
 @media screen and (min-width: 576px) {
   .static_sm {
     position: static;
@@ -2396,10 +2392,6 @@ h1 {
 
   .fixed_sm {
     position: fixed;
-  }
-
-  .sticky_sm {
-    position: sticky;
   }
 }
 @media screen and (min-width: 768px) {
@@ -2418,10 +2410,6 @@ h1 {
   .fixed_md {
     position: fixed;
   }
-
-  .sticky_md {
-    position: sticky;
-  }
 }
 @media screen and (min-width: 992px) {
   .static_lg {
@@ -2438,10 +2426,6 @@ h1 {
 
   .fixed_lg {
     position: fixed;
-  }
-
-  .sticky_lg {
-    position: sticky;
   }
 }
 .top--2 {
