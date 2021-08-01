@@ -2369,7 +2369,7 @@ h1 {
   position: relative;
 }
 
-.aboslute {
+.absolute {
   position: absolute;
 }
 
@@ -2390,7 +2390,7 @@ h1 {
     position: relative;
   }
 
-  .aboslute_sm {
+  .absolute_sm {
     position: absolute;
   }
 
@@ -2411,7 +2411,7 @@ h1 {
     position: relative;
   }
 
-  .aboslute_md {
+  .absolute_md {
     position: absolute;
   }
 
@@ -2432,7 +2432,7 @@ h1 {
     position: relative;
   }
 
-  .aboslute_lg {
+  .absolute_lg {
     position: absolute;
   }
 
