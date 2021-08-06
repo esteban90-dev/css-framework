@@ -76,11 +76,6 @@ $line-heights: (
   "lg": 1.5
 );
 
-$link-styles: (
-  "underline": underline,
-  "no-underline": none
-);
-
 $list-styles: (
   null: none,
   "numbered": roman,
@@ -321,15 +316,6 @@ $font-style-selector: (
   "property-name": "font-style",
   "responsive": true,
   "values": $font-styles,
-  "additional-properties": null
-);
-
-$link-selector: (
-  "selector-prefix": ".link",
-  "prefix-seperator": "-",
-  "property-name": "text-decoration",
-  "responsive": true,
-  "values": $link-styles,
   "additional-properties": null
 );
 

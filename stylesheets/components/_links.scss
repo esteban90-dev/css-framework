@@ -2,9 +2,19 @@
  * Links utility classes
  */
 
- @include generate_class_selectors_from_map($link-selector);
+.link-no-underline, .link-underline-hover {
+  text-decoration: none;
+}
 
- .link-underline-hover:hover {
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
+  @media screen and (min-width: $breakpoint-value) {
+    .link-no-underline_#{$breakpoint-key}, .link-underline-hover_#{$breakpoint-key} { 
+      text-decoration: none;
+    }
+  }
+}
+
+.link-underline-hover:hover {
   text-decoration: underline;
 }
 
@@ -15,3 +25,21 @@
     }
   }
 }
+
+
+@each $color-key, $color-value in $colors {
+  .link-visited-#{$color-key}:visited {
+    color: $color-value;
+  }
+}
+
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
+  @media screen and (min-width: $breakpoint-value) {
+    @each $color-key, $color-value in $colors {
+      .link-visited-#{$color-key}_#{$breakpoint-key}:visited {
+        color: $color-value;
+      }
+    }
+  }
+}
+
