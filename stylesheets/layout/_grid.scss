@@ -9,6 +9,7 @@
 
 .container {
   width: 100%;
+  padding: 0px math.div($horizontal-gutter-width, 2) 0px math.div($horizontal-gutter-width, 2);
 }
 
 .row {
