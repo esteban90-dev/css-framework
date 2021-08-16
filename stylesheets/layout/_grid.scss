@@ -25,12 +25,16 @@
 
 .col {
   width: auto;
+  padding-left: math.div( $horizontal-gutter-width, 2 );
+  padding-right: math.div( $horizontal-gutter-width, 2 );
 }
 
 @each $breakpoint-key, $breakpoint-value in $breakpoints {
   @media screen and (min-width: $breakpoint-value) {
     .col_#{$breakpoint_key} {
       width: auto;
+      padding-left: math.div( $horizontal-gutter-width, 2 );
+      padding-right: math.div( $horizontal-gutter-width, 2 );
     }
   }
 }
